@@ -1,0 +1,65 @@
+{
+    "slides" : [
+        {
+          "name": "iPhone 15 Series",
+          "description": "Up to 10% off Voucher",
+          "src": "/assets/Iphones.jpeg"
+        },
+        {
+          "name": "Kitchen Knives Set",
+          "description": "Save 15% on all sets",
+          "src": "/assets/kithne_knives.webp"
+        },
+        {
+          "name": "High-Speed Blender",
+          "description": "Save 25% on select models!",
+          "src": "/assets/Blender.jpeg"
+        },
+        {
+          "name": "Designer Handbags",
+          "description": "Exclusive 30% Discount",
+          "src": "/assets/handbag.jpg"
+        },
+        {
+          "name": "Fitness Tracker",
+          "description": "Track your fitness with 20% off",
+          "src": "/assets/fintess_tracker.jpeg"
+        },
+        {
+          "name": "Smart TV",
+          "description": "Enjoy 25% off on top models",
+          "src": "/assets/TV.jpg"
+        },
+        {
+          "name": "Mountain Bike",
+          "description": "Save 35% on all bikes",
+          "src": "/assets/bike.jpg"
+        },
+        {
+          "name": "Bestselling Novel",
+          "description": "Get 10% off bestsellers",
+          "src": "/assets/books.jpg"
+        },
+        {
+          "name": "Car Dashcam",
+          "description": "Up to 25% off on select models",
+          "src": "/assets/dashcam.webp"
+        },
+        {
+          "name": "Ergonomic Office Chair",
+          "description": "Save 30% on ergonomic chairs",
+          "src": "/assets/of.jpg"
+        },
+        {
+          "name": "Electric Guitar",
+          "description": "Unlock 20% off your next guitar",
+          "src": "/assets/electric_guitar.jpg"
+        },
+        {
+          "name": "Power Tool Set",
+          "description": "Get 25% off on power tool sets",
+          "src": "/assets/power_tools.jpg"
+        }
+      ]
+}
+  
