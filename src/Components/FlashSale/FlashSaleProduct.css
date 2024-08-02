@@ -1,0 +1,127 @@
+.image {
+    position: relative; /* Allows positioning of children */
+    width: 270px;
+    height: 250px;
+    background: #F5F5F5;
+    border-radius: 4px;
+    overflow: hidden; /* Ensures icons do not overflow */
+    margin-bottom: 16px;
+    border: 1px solid black;
+}
+
+.icons {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.heart, .eye {
+    background-color: white; 
+    padding: 9px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color: black; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+
+.heart:hover, .eye:hover{
+background-color: #DB4444;
+}
+
+.discount {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #DB4444;
+    border-radius: 4px;
+}
+
+
+
+.description {
+    /* Frame 569 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 201px;
+height: 84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.description .price {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+}
+
+.description .price .regular_price {
+    color: #DB4444;
+    margin-right: 8px;
+}
+
+.description .price .discount_price {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.description .title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.addToCart{
+    position: absolute;
+    width: 100%;
+    background: #000000;
+    border-radius: 0px 0px 4px 4px;
+    height: 41px;
+    bottom: 0px;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.image:hover .addToCart {
+    opacity: 1;
+    visibility: visible;
+}
+
+.star{
+width: 20px;
+height: 20px;
+color: #FFAD33;
+border-radius: 1.4px;
+
+}

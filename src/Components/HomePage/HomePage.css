@@ -1,6 +1,7 @@
 .home_page {
     display: flex;
     justify-content: space-between; 
+    margin-bottom: 140px;
 }
   
     
