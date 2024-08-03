@@ -1,39 +1,40 @@
-
 .menu {
-    margin-top: 30px;
+
     display: flex;
     flex-direction: column;
-    padding: 0;
+    align-items: flex-start; 
     gap: 16px;
+    border-right: 0.5px solid #000; 
+    padding-right: var(--size-16);
+
+
+}
+
+.menu_option {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-right: 24px; 
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000;
 }
 
 .icon {
     width: 24px;
     height: 24px;
     transform: rotate(-90deg);  
-    visibility: hidden; /* Hide icon by default */
-    opacity: 0; /* Make icon invisible by default */
-    transition: opacity 0.3s, visibility 0.3s; /* Smooth transition for visibility and opacity */
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 0.3s, visibility 0.3s; 
 }
 
 .menu_option:hover .icon {
-    visibility: visible; /* Show icon on hover */
-    opacity: 1; /* Make icon visible on hover */
+    visibility: visible;
+    opacity: 1; 
 }
 
-.menu_option a {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: start;
-    color: #000;
-}
-  
-.line {
-    width: 0; 
-    
-    opacity: 0.3;
-    border-left: 0.5px solid #000; 
-    transform: rotate(180deg); 
-}
+
+

@@ -3,46 +3,54 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "./CtMenu.css";
+import "../CriticalCss.css";
 
 const CtMenu: React.FC = () => {
   return (
-    <div className="dsfx f-">
+    <>
       <div className="menu">
-        <a className="menu_option">
-          <Link to="/mens-fashion">Men's Fashion</Link>
+        <Link to="/woomans-fashion" className="menu_option">
+          <p>Wooman's Fashion</p>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </a>
-        <a className="menu_option">
-          <Link to="/electronics">Electronics</Link>
+        </Link>
+        <Link to="/mens-fashion" className="menu_option">
+          <p>Men's Fashion</p>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </a>
-        <a className="menu_option">
-          <Link to="/home-lifestyle">Home & Lifestyle</Link>
+        </Link>
+        <Link to="/electronics" className="menu_option">
+          <p>Electronics</p>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </a>
-        <a className="menu_option">
-          <Link to="/medicine">Medicine</Link>
+        </Link>
+        <Link to="/home-lifestyle" className="menu_option">
+          <p>Home & Lifestyle</p>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </a>
-        <a className="menu_option">
-          <Link to="/sports-outdoors">Sports & Outdoors</Link>
+        </Link>
+        <Link to="/medicine" className="menu_option">
+          <p>Medicine</p>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </a>
-        <a className="menu_option">
-          <Link to="/babies-toys">Baby's & Toys</Link>
+        </Link>
+        <Link
+          to="/sports-outdoors"
+          className="menu_option dis_f_between_center"
+        >
+          <p>Sports & Outdoors</p>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </a>
-        <a className="menu_option">
-          <Link to="/groceries-pets">Groceries & Pets</Link>
+        </Link>
+        <Link to="/babies-toys" className="menu_option">
+          <p>Baby's & Toys</p>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </a>
-        <a className="menu_option">
-          <Link to="/health-beauty">Health & Beauty</Link>
+        </Link>
+        <Link to="/groceries-pets" className="menu_option">
+          <p>Groceries & Pets</p>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </a>
+        </Link>
+        <Link to="/health-beauty" className="menu_option">
+          <p>Health & Beauty</p>
+          <FontAwesomeIcon icon={faCaretDown} className="icon" />
+        </Link>
       </div>
-      <div className="line"></div>
-    </div>
+      {/* <div className="line"></div> */}
+    </>
   );
 };
 

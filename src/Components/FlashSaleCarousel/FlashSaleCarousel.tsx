@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import CategoriesSwiper from "../Swiper/CategoriesSwiper";
 import "./FlashSaleCarousel.css";
 import Marker from "../Marker/Marker";
 import CountdownTimer from "../Countdown Timer/CountdownTimer";
@@ -98,9 +97,7 @@ const FlashSaleCarousel: React.FC = () => {
           <Marker text="Categories" />
           <h1 className="category_title">Browse By Category</h1>
         </div>
-        <div className="categories_carousel">
-          <CategoriesSwiper></CategoriesSwiper>
-        </div>
+        <div className="categories_carousel"></div>
       </div>
     </div>
   );

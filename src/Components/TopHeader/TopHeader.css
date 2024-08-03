@@ -1,51 +1,38 @@
 .top-header-bg {
-    background-color: #000;
-    padding: 12px 135px;
-    border-bottom: 1px solid #e0e0e0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: var(--background-color-black);
+    padding-top: 12px ;
+    padding-bottom: 12px ;
   }
   
   .top-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
   }
   
   .center-container {
-    display: flex;
     gap: 1rem;
   }
   
-  .top-header__text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #FAFAFA;
+  .top-header_text {
+    font-family: var(--font-regular);
+    font-size: var(--size-14);
+    color: var(--text-color-light);
   }
   
   .top-header__sales-banner {
-    font-weight: 400;
-    line-height: 21px;
+    font-weight: var(--font-wieght-400);
+    
   }
   
   .top-header__shop-btn {
-    font-weight: 600;
-    line-height: 24px;
+    font-weight: var(--font-wieght-600);
+    
     text-align: center;
     text-decoration: underline;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
-  .top-header__shop-btn:hover {
-    color: #0056b3;
-  }
-  
-  
-
-  .top-header__languages:hover { 
-    color: #0056b3;
+  .top-header__shop-btn:hover, .top-header__languages:hover  {
+    color:  var(--button-color-hover-blue);
   }
   
