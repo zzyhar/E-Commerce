@@ -4,7 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./CategoriesSwiper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingBag } from "@fortawesome/free-solid-svg-icons"; // Example icon
+import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
+// Example icon
 
 interface Category {
   name: string;
@@ -25,12 +26,11 @@ const categories: Category[] = [
 
 const CategoriesSwiper: React.FC = () => {
   return (
-    <Swiper slidesPerView={3} spaceBetween={30} className="mySwiper">
+    <Swiper slidesPerView={4} spaceBetween={30} className="mySwiper">
       {categories.map((category) => (
         <SwiperSlide key={category.name}>
           <Link to={category.link} className="category-link">
             <FontAwesomeIcon icon={faShoppingBag} className="category-icon" />{" "}
-            {/* Replace with appropriate icon */}
             <div className="category-name">{category.name}</div>
           </Link>
         </SwiperSlide>

@@ -6,45 +6,41 @@ import "./CtMenu.css";
 
 const CtMenu: React.FC = () => {
   return (
-    <div>
-      <ul className="menu">
-        <li className="menu_option">
-          <Link to="/womens-fashion">Women's Fashion</Link>
-          <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </li>
-        <li className="menu_option">
+    <div className="dsfx f-">
+      <div className="menu">
+        <a className="menu_option">
           <Link to="/mens-fashion">Men's Fashion</Link>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </li>
-        <li className="menu_option">
+        </a>
+        <a className="menu_option">
           <Link to="/electronics">Electronics</Link>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </li>
-        <li className="menu_option">
+        </a>
+        <a className="menu_option">
           <Link to="/home-lifestyle">Home & Lifestyle</Link>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </li>
-        <li className="menu_option">
+        </a>
+        <a className="menu_option">
           <Link to="/medicine">Medicine</Link>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </li>
-        <li className="menu_option">
+        </a>
+        <a className="menu_option">
           <Link to="/sports-outdoors">Sports & Outdoors</Link>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </li>
-        <li className="menu_option">
+        </a>
+        <a className="menu_option">
           <Link to="/babies-toys">Baby's & Toys</Link>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </li>
-        <li className="menu_option">
+        </a>
+        <a className="menu_option">
           <Link to="/groceries-pets">Groceries & Pets</Link>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </li>
-        <li className="menu_option">
+        </a>
+        <a className="menu_option">
           <Link to="/health-beauty">Health & Beauty</Link>
           <FontAwesomeIcon icon={faCaretDown} className="icon" />
-        </li>
-      </ul>
+        </a>
+      </div>
       <div className="line"></div>
     </div>
   );

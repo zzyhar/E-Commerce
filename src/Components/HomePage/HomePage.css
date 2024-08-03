@@ -1,3 +1,8 @@
+.default-container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 .home_page {
     display: flex;
     justify-content: space-between; 

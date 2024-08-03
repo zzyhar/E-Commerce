@@ -10,7 +10,7 @@ import FlashSaleCarousel from "../FlashSaleCarousel/FlashSaleCarousel";
 const HomePage: React.FC = () => {
   return (
     <>
-      <div className="home_page">
+      <div className="home_page default-container">
         <CtMenu />
         <Carousel data={slidesData as CarouselData} />
       </div>

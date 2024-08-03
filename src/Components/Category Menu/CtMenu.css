@@ -1,25 +1,10 @@
+
 .menu {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Changed to align items to the start */
-    list-style: none;
     padding: 0;
     gap: 16px;
-    position: absolute;
-    left: 135px; 
-
-}
-  
-.menu_option {
-    width: 100%;
-    height: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Center items vertically */
-    order: 5;
-    position: relative; /* Ensure the icon can be positioned absolutely within this */
-    padding-right: 24px; /* Ensure there's space for the icon */
 }
 
 .icon {
@@ -46,11 +31,7 @@
 }
   
 .line {
-    position: absolute;
     width: 0; 
-    height: 382px; 
-    left: calc(135px + 217px + 16px); 
-    top: 178px; 
     
     opacity: 0.3;
     border-left: 0.5px solid #000; 

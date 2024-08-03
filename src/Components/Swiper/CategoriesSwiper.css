@@ -21,9 +21,9 @@
   }
   
   .category-icon {
-    font-size: 32px; /* Adjust size as needed */
+    font-size: 32px; 
     margin-bottom: 8px;
-    color: #000; /* Default icon color */
+    color: #000; 
   }
   
   .category-link:hover .category-icon {
