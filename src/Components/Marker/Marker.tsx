@@ -1,10 +1,14 @@
 import "./Marker.css";
 
-const Marker: React.FC = () => {
+interface MarkerProps {
+  text: string;
+}
+
+const Marker: React.FC<MarkerProps> = ({ text }) => {
   return (
     <div className="heading">
       <div className="marker"></div>
-      <div className="title">Today's</div>
+      <div className="title">{text}</div>
     </div>
   );
 };

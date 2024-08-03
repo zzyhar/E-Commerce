@@ -5,24 +5,17 @@ import "./FlashSaleProduct.css";
 
 const FlashSaleProduct: React.FC = () => {
   const imageRef = useRef<HTMLDivElement>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const [images, setImages] = useState<string[]>([
     "/assets/testBackground/c1.jpg",
     "/assets/testBackground/c2.jpeg",
     "/assets/testBackground/c3.jpeg",
   ]);
   let currentIndex = 0;
-  let intervalId: NodeJS.Timeout | null = null;
 
   useEffect(() => {
-    // Simulate fetching images from a database
-    // Replace this with actual data fetching in the future
     const fetchImages = async () => {
-      // Example: Fetch images from an API or database
-      // const response = await fetch('/api/images');
-      // const data = await response.json();
-      // setImages(data.images);
-
-      // For now, we use static images
+      // Simulate fetching images
       setImages([
         "/assets/testBackground/c1.jpg",
         "/assets/testBackground/c2.jpeg",
@@ -31,6 +24,14 @@ const FlashSaleProduct: React.FC = () => {
     };
 
     fetchImages();
+
+    // Cleanup function
+    return () => {
+      const currentInterval = intervalRef.current;
+      if (currentInterval) {
+        clearInterval(currentInterval);
+      }
+    };
   }, []);
 
   const changeBackground = () => {
@@ -42,13 +43,13 @@ const FlashSaleProduct: React.FC = () => {
 
   const handleMouseEnter = () => {
     changeBackground(); // Change immediately on hover
-    intervalId = setInterval(changeBackground, 1000);
+    intervalRef.current = setInterval(changeBackground, 1000);
   };
 
   const handleMouseLeave = () => {
-    if (intervalId) {
-      clearInterval(intervalId);
-      intervalId = null;
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
     }
   };
 

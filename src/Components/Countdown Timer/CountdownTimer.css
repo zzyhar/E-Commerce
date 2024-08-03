@@ -1,0 +1,47 @@
+.clock {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.clock section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.clock section p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.clock section small {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.clock span {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #E07575;
+    padding: 0 0.5rem; /* Add padding for spacing */
+    display: flex;
+    align-items: center; /* Center vertically */
+    border-radius: 50%;
+}
