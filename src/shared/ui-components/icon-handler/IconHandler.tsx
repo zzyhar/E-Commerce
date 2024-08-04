@@ -1,6 +1,6 @@
 interface IconProps {
   path: string;
-  iconSize: "28x28" | "24x24" | "20x20" | "16x16" | "12x12";
+  iconSize: "32x32" | "28x28" | "24x24" | "20x20" | "16x16" | "12x12";
   className: string;
 }
 
@@ -10,6 +10,10 @@ const iconSizes: {
     height: string;
   };
 } = {
+  "32x32": {
+    width: "32px",
+    height: "32px",
+  },
   "28x28": {
     width: "28px",
     height: "28px",

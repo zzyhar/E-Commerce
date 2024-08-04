@@ -6,4 +6,15 @@
     text-decoration: underline;
 }
 
+.search-input{
+    border: none; 
+}
+.search-box{
+    padding: 7px 20px;
+ 
+}
 
+.outer-line-header{
+     
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+}

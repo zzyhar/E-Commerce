@@ -1,9 +1,11 @@
 .carousel {
+    margin-top: 40px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 890px;
+    width: 892px;
+    height: 304px;
   }
   
   .slide {
