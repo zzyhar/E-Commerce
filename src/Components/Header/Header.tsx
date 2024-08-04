@@ -8,42 +8,41 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
-import "../CriticalCss.css";
+import IconHandler from "../../shared/ui-components/icon-handler/IconHandler";
+import { searchIcon } from "../../shared/ui-components/icon-handler/index";
 
 const Header: React.FC = () => (
   <>
     <TopHeader />
-    <header className="padding_main dis_f_between_center header">
-      {/* Logo Section */}
-      <div className="logo">Exclusive</div>
-
-      {/* Navigation Menu */}
-      <nav>
-        <ul className="dis_f nav">
-          <li className="nav-item">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about">About</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/signup">Sign Up</Link>
-          </li>
-        </ul>
+    <header className="default-container dsfx mb-16px fx-j-sb fx-ai-c">
+      <div className="logo heading-bold-24px col-tx2 dfsx">Exclusive</div>
+      <nav className="dsfx fx-d-r fx-ai-s f-gap-48px">
+        <Link className="nav-item title-16px col-tx2" to="/home">
+          Home
+        </Link>
+        <Link className="nav-item title-16px col-tx2" to="/contact">
+          Contact
+        </Link>
+        <Link className="nav-item title-16px col-tx2" to="/about">
+          About
+        </Link>
+        <Link className="nav-item title-16px col-tx2" to="/signup">
+          Sign Up
+        </Link>
       </nav>
 
-      {/* Search Bar and Icons */}
-      <div className="dis_f_align_center">
-        <div className="dis_f_align_center search-container">
+      <div className="dsfx fx-j-sb fx-ai-c">
+        <div className="dsfx f-gap-34px">
           <input
             type="text"
             placeholder="What are you looking for?"
             className="search-input"
           />
-          <FontAwesomeIcon className="icon-search" icon={faMagnifyingGlass} />
+          <IconHandler
+            className="svg-p1 svg-hov-btn2 cursor-pointer"
+            path={searchIcon}
+            iconSize="20x20"
+          ></IconHandler>
         </div>
         <div className="dis_f_default icons-container">
           <Link to="/favorites">

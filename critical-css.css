@@ -1,0 +1,933 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********************** Critical CSS ********************************/
+:root {
+  /* Color */
+  /* ! Rename colors to figma design */
+  /* --theme-primary-light-color: #ffffff;
+  --theme-primary-dark-color: #363738;
+  --theme-text-color-light: #fafafa;
+  --theme-text-color-dark: #7d8184;
+  --theme-button-color: #000000;
+  --theme-text-color-dark-2: #000000;
+  --theme-secondary-color-color-1: #fefaf1;
+  --theme-secondary-color-color-2-red: #db4444;
+  --theme-secondary-color-color-2-grey: #f5f5f5;
+  --theme-button-color-green: #47b486;
+  --theme-button-color-red: #db4444;
+  --theme-button-color-hover-red: #e07575;
+  --theme-button-color-hover-blue: #a0bce0;
+  --theme-background-color: #ffffff;
+  --theme-background-color-black: #000000;
+  --theme-transparent: transparent; */
+
+  --theme-color-primary: #ffffff;
+  --theme-color-primary1: #363738;
+  --theme-color-secondary: #f5f5f5;
+  --theme-color-secondary1: #fefaf1;
+  --theme-color-secondary2: #db4444;
+  --theme-color-text: #fafafa;
+  --theme-color-text1: #7d8184;
+  --theme-color-text2: #000000;
+  --theme-color-button: #000000;
+  --theme-color-button1: #00ff66;
+  --theme-color-button2: #db4444;
+  --theme-color-hover-button: #e07575;
+  --theme-color-hover-button-blue: #a0bce0;
+  --theme-color-bg: #ffffff;
+  --theme-transparent: transparent;
+
+  /* Font Families */
+  --font-title: "Inter";
+  --font-regular: "Poppins";
+  --font-default: sans-serif;
+
+  /* Font Weight */
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+}
+
+/* ! Font clases based on design + proper naming */
+
+
+/***********/
+/*  Layout */
+/***********/
+
+.default-container {
+  max-width: 1170px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--theme-color-bg);
+}
+
+.hor-div {
+  height: 1px;
+  width: 100%;
+}
+
+.ver-div {
+  height: 100%;
+  width: 1px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/***********/
+/*   Fonts */
+/***********/
+
+.heading-bold-24px {
+  /* Heading/24PX Bold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+  letter-spacing: 0.03em;
+}
+
+.heading-36px {
+  /* Heading/36PX SemiBold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.04em;
+}
+
+.title-12px {
+  /* Title/12PX Medium */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.title-14px {
+  /* Title/14PX Regular */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+  text-align: center;
+}
+
+.title-16px {
+  /* Title/16PX Regular */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+}
+
+.title-16px-semi {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.04em;
+}
+
+.title-24px {
+  /* Title/16PX Regular */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+}
+
+/**************/
+/* Flex rules */
+/**************/
+.dsfx {
+  display: flex;
+}
+
+.fx-d-r {
+  flex-direction: row;
+}
+
+.fx-d-rr {
+  flex-direction: row-reverse;
+}
+
+.fx-d-c {
+  flex-direction: column;
+}
+
+.fx-j-c {
+  justify-content: center;
+}
+
+.fx-j-sb {
+  justify-content: space-between;
+}
+
+.fx-j-sa {
+  justify-content: space-around;
+}
+
+.fx-j-se {
+  justify-content: space-evenly;
+}
+
+.fx-j-s {
+  justify-content: flex-start;
+}
+
+.fx-j-e {
+  justify-content: flex-end;
+}
+
+.fx-j-s-fe {
+  justify-self: flex-end;
+}
+
+.fx-ai-s {
+  align-items: flex-start;
+}
+
+.fx-ac-s {
+  align-content: flex-start;
+}
+
+.fx-ai-c {
+  align-items: center;
+}
+
+.fx-ai-end {
+  align-items: flex-end;
+}
+
+.fx-as-s {
+  align-self: flex-start;
+}
+.fx-as-c {
+  align-self: center;
+}
+
+.fx-as-fe {
+  align-self: flex-end;
+}
+
+/**************/
+/*     Gaps   */
+/**************/
+.f-gap-2px {
+  gap: 2px;
+}
+
+.f-gap-4px {
+  gap: 4px;
+}
+
+.f-gap-8px {
+  gap: 8px;
+}
+
+.f-gap-12px {
+  gap: 12px;
+}
+
+.f-gap-16px {
+  gap: 16px;
+}
+
+.f-gap-24px {
+  gap: 24px;
+}
+
+.f-gap-32px {
+  gap: 32px;
+}
+.f-gap-34px {
+  gap: 34px;
+}
+.f-gap-48px {
+  gap: 48px;
+}
+
+
+/**************/
+/*   Margins   */
+/**************/
+.mt-2px {
+  margin-top: 2px;
+}
+.mt-4px {
+  margin-top: 4px;
+}
+.mt-8px {
+  margin-top: 8px;
+}
+.mt-12px {
+  margin-top: 12px;
+}
+.mt-16px {
+  margin-top: 16px;
+}
+.mt-20px {
+  margin-top: 16px;
+}
+.mt-24px {
+  margin-top: 24px;
+}
+.mt-32px {
+  margin-top: 32px;
+}
+.mt-36px {
+  margin-top: 36px;
+}
+.mt-40px {
+  margin-top: 40px;
+}
+
+
+/* Margin bottom */
+.mb-2px {
+  margin-bottom: 2px;
+}
+.mb-4px {
+  margin-bottom: 4px;
+}
+.mb-8px {
+  margin-bottom: 8px;
+}
+.mb-12px {
+  margin-bottom: 12px;
+}
+.mb-16px {
+  margin-bottom: 16px;
+}
+.mb-20px {
+  margin-bottom: 20px;
+}
+.mb-24px {
+  margin-bottom: 24px;
+}
+.mb-32px {
+  margin-bottom: 32px;
+}
+.mb-36px {
+  margin-bottom: 36px;
+}
+.mb-40px {
+  margin-bottom: 40px;
+}
+
+/* Margin right */
+.mr-2px {
+  margin-right: 2px;
+}
+.mr-4px {
+  margin-right: 4px;
+}
+.mr-8px {
+  margin-right: 8px;
+}
+.mr-12px {
+  margin-right: 12px;
+}
+.mr-16px {
+  margin-right: 16px;
+}
+.mr-20px {
+  margin-right: 20px;
+}
+.mr-24px {
+  margin-right: 24px;
+}
+.mr-32px {
+  margin-right: 32px;
+}
+
+/* Margin left */
+.ml-2px {
+  margin-left: 2px;
+}
+.ml-4px {
+  margin-left: 4px;
+}
+.ml-8px {
+  margin-left: 8px;
+}
+.ml-12px {
+  margin-left: 12px;
+}
+.ml-16px {
+  margin-left: 16px;
+}
+.ml-20px {
+  margin-left: 20px;
+}
+.ml-24px {
+  margin-left: 24px;
+}
+.ml-32px {
+  margin-left: 32px;
+}
+
+/* ! Padding */
+.p-2px {
+  padding: 2px;
+}
+.p-4px {
+  padding: 4px;
+}
+.p-8px {
+  padding: 8px;
+}
+.p-12px {
+  padding: 12px;
+}
+.p-16px {
+  padding: 16px;
+}
+.p-20px {
+  padding: 16px;
+}
+.p-24px {
+  padding: 24px;
+}
+.p-32px {
+  padding: 32px;
+}
+.p-36px {
+  padding: 36px;
+}
+.p-40px {
+  padding: 40px;
+}
+
+/* ! Colors */
+.col-p {
+  color: var(--theme-color-primary);
+}
+.col-p1 {
+  color: var(--theme-color-primary1);
+}
+.col-s {
+  color: var(--theme-color-secondary);
+}
+.col-sec1 {
+  color: var(--theme-color-secondary1);
+}
+
+.col-sec2 {
+  color: var(--theme-color-secondary2);
+}
+.col-tx {
+  color: var(--theme-color-text);
+}
+.col-tx1 {
+  color: var(--theme-color-text1);
+}
+.col-tx2 {
+  color: var(--theme-color-text2);
+}
+.col-btn {
+  color: var(--theme-color-button);
+}
+.col-btn1 {
+  color: var(--theme-color-button1);
+}
+.col-btn2 {
+  color: var(--theme-color-button2);
+}
+/* ! Font colors hover */
+.col-hov-p:hover {
+  color: var(--theme-color-primary);
+}
+.col-hov-p1:hover {
+  color: var(--theme-color-primary1);
+}
+.col-hov-s:hover {
+  color: var(--theme-color-secondary);
+}
+.col-hov-sec1:hover {
+  color: var(--theme-color-secondary1);
+}
+
+.col-hov-sec2:hover {
+  color: var(--theme-color-secondary2);
+}
+.col-hov-tx:hover {
+  color: var(--theme-color-text);
+}
+.col-hov-tx1:hover {
+  color: var(--theme-color-text1);
+}
+.col-hov-tx2:hover {
+  color: var(--theme-color-text2);
+}
+.col-hov-btn:hover {
+  color: var(--theme-color-button);
+}
+.col-hov-btn1:hover {
+  color: var(--theme-color-button1);
+}
+.col-hov-btn2:hover {
+  color: var(--theme-color-button2);
+}
+.col-hov-btn-hov:hover {
+  color: var(--theme-color-hover-button);
+}
+
+.col-hov-btn-bl:hover {
+  color: var(--theme-color-hover-button-blue);
+}
+
+
+/* ! Bg colors */
+
+.bg-col-p {
+  background-color: var(--theme-color-primary);
+}
+.bg-col-p1 {
+  background-color: var(--theme-color-primary1);
+}
+.bg-col-s {
+  background-color: var(--theme-color-secondary);
+}
+.bg-col-sec1 {
+  background-color: var(--theme-color-secondary1);
+}
+
+.bg-col-sec2 {
+  background-color: var(--theme-color-secondary2);
+}
+.bg-col-tx {
+  background-color: var(--theme-color-text);
+}
+.bg-col-tx1 {
+  background-color: var(--theme-color-text1);
+}
+.bg-col-tx2 {
+  background-color: var(--theme-color-text2);
+}
+.bg-col-btn {
+  background-color: var(--theme-color-button);
+}
+.bg-col-btn1 {
+  background-color: var(--theme-color-button1);
+}
+.bg-col-btn2 {
+  background-color: var(--theme-color-button2);
+}
+
+/* ! Bg colors hover */
+.bg-hov-p:hover {
+  background-color: var(--theme-color-primary);
+}
+.bg-hov-p1:hover {
+  background-color: var(--theme-color-primary1);
+}
+.bg-hov-s:hover {
+  background-color: var(--theme-color-secondary);
+}
+.bg-hov-sec1:hover {
+  background-color: var(--theme-color-secondary1);
+}
+
+.bg-hov-sec2:hover {
+  background-color: var(--theme-color-secondary2);
+}
+.bg-hov-tx:hover {
+  background-color: var(--theme-color-text);
+}
+.bg-hov-tx1:hover {
+  background-color: var(--theme-color-text1);
+}
+.bg-hov-tx2:hover {
+  background-color: var(--theme-color-text2);
+}
+.bg-hov-btn:hover {
+  background-color: var(--theme-color-button);
+}
+.bg-hov-btn1:hover {
+  background-color: var(--theme-color-button1);
+}
+.bg-hov-btn2:hover {
+  background-color: var(--theme-color-button2);
+}
+
+/* ! Borders */
+
+.br-1px {
+  border: 1px;
+}
+
+.bor-col-p {
+  border-color: var(--theme-color-primary);
+}
+.bor-col-p1 {
+  border-color: var(--theme-color-primary1);
+}
+.bor-col-s {
+  border-color: var(--theme-color-secondary);
+}
+.bor-col-sec1 {
+  border-color: var(--theme-color-secondary1);
+}
+
+.bor-col-sec2 {
+  border-color: var(--theme-color-secondary2);
+}
+.bor-col-tx {
+  border-color: var(--theme-color-text);
+}
+.bor-col-tx1 {
+  border-color: var(--theme-color-text1);
+}
+.bor-col-tx2 {
+  border-color: var(--theme-color-text2);
+}
+.bor-col-btn {
+  border-color: var(--theme-color-button);
+}
+.bor-col-btn1 {
+  border-color: var(--theme-color-button1);
+}
+.bor-col-btn2 {
+  border-color: var(--theme-color-button2);
+}
+
+/* ! Borders hover */
+.bor-col-hov-p:hover {
+  border-color: var(--theme-color-primary);
+}
+.bor-col-hov-p1:hover {
+  border-color: var(--theme-color-primary1);
+}
+.bor-col-hov-s:hover {
+  border-color: var(--theme-color-secondary);
+}
+.bor-col-hov-sec1:hover {
+  border-color: var(--theme-color-secondary1);
+}
+
+.bor-col-hov-sec2:hover {
+  border-color: var(--theme-color-secondary2);
+}
+.bor-col-hov-tx:hover {
+  border-color: var(--theme-color-text);
+}
+.bor-col-hov-tx1:hover {
+  border-color: var(--theme-color-text1);
+}
+.bor-col-hov-tx2:hover {
+  border-color: var(--theme-color-text2);
+}
+.bor-col-hov-btn:hover {
+  border-color: var(--theme-color-button);
+}
+.bor-col-hov-btn1:hover {
+  border-color: var(--theme-color-button1);
+}
+.bor-col-hov-btn2:hover {
+  border-color: var(--theme-color-button2);
+}
+
+/* ! Borders radius */
+
+.br-rad-2px {
+  border-radius: 2px;
+}
+.br-rad-4px {
+  border-radius: 4px;
+}
+.br-rad-8xp {
+  border-radius: 8xp;
+}
+.br-rad-12px {
+  border-radius: 12px;
+}
+.br-rad-16px {
+  border-radius: 16px;
+}
+.br-rad-20px {
+  border-radius: 20px;
+}
+
+.br-rad-24px {
+  border-radius: 24px;
+}
+
+.br-rad-28px {
+  border-radius: 28px;
+}
+.br-rad-32px {
+  border-radius: 32px;
+}
+
+/* ! SVG */
+
+.svg-p path {
+  fill: var(--theme-color-primary);
+  stroke: var(--theme-color-primary);
+}
+.svg-p1 path {
+  fill: var(--theme-color-primary1);
+  stroke: var(--theme-color-primary1);
+}
+.svg-s path {
+  fill: var(--theme-color-secondary);
+  stroke: var(--theme-color-secondary);
+}
+.svg-sec1 path {
+  fill: var(--theme-color-secondary1);
+  stroke: var(--theme-color-secondary1);
+}
+
+.svg-sec2 path {
+  fill: var(--theme-color-secondary2);
+  stroke: var(--theme-color-secondary2);
+}
+.svg-tx path {
+  fill: var(--theme-color-text);
+  stroke: var(--theme-color-text);
+}
+.svg-tx1 path {
+  fill: var(--theme-color-text1);
+  stroke: var(--theme-color-text1);
+}
+.svg-tx2 path {
+  fill: var(--theme-color-text2);
+  stroke: var(--theme-color-text2);
+}
+.svg-btn path {
+  fill: var(--theme-color-button);
+  stroke: var(--theme-color-button);
+}
+.svg-btn1 path {
+  fill: var(--theme-color-button1);
+  stroke:  var(--theme-color-button1);
+}
+.svg-btn2 path {
+  fill: var(--theme-color-button2);
+  stroke:  var(--theme-color-button2);
+}
+
+/* Hover */
+.svg-hov-p:hover path {
+  fill: var(--theme-color-primary);
+  stroke: var(--theme-color-primary);
+}
+.svg-hov-p1:hover path {
+  fill: var(--theme-color-primary1);
+  stroke: var(--theme-color-primary1);
+}
+.svg-hov-s:hover path {
+  fill: var(--theme-color-secondary);
+  stroke: var(--theme-color-secondary);
+}
+.svg-hov-sec1:hover path {
+  fill: var(--theme-color-secondary1);
+  stroke: var(--theme-color-secondary1);
+}
+
+.svg-hov-sec2:hover path {
+  fill: var(--theme-color-secondary2);
+  stroke: var(--theme-color-secondary2);
+}
+.svg-hov-tx:hover path {
+  fill: var(--theme-color-text);
+  stroke: var(--theme-color-text);
+}
+.svg-hov-tx1:hover path {
+  fill: var(--theme-color-text1);
+  stroke: var(--theme-color-text1);
+}
+.svg-hov-tx2:hover path {
+  fill: var(--theme-color-text2);
+  stroke: var(--theme-color-text2);
+}
+.svg-hov-btn:hover path {
+  fill: var(--theme-color-button);
+  stroke: var(--theme-color-button);
+}
+.svg-hov-btn1:hover path {
+  fill: var(--theme-color-button1);
+  stroke:  var(--theme-color-button1);
+}
+.svg-hov-btn2:hover path {
+  fill: var(--theme-color-button2);
+  stroke:  var(--theme-color-button2);
+}
+
+/* !  */
+:root {
+  --theme-transition-time: 0.3s;
+}
+
+/* ! All classes from the top line up */
+
+
+.col-p,
+.col-p1,
+.col-s,
+.col-sec1,
+.col-sec2,
+.col-tx,
+.col-tx1,
+.col-tx2,
+.col-btn,
+.col-btn1,
+.col-btn2,
+/* background */
+.bg-p,
+.bg-p1,
+.bg-s,
+.bg-sec1,
+.bg-sec2,
+.bg-tx,
+.bg-tx1,
+.bg-tx2,
+.bg-btn,
+.bg-btn1,
+.bg-btn2,
+/* borders */
+.bor-col-p,
+.bor-col-p1,
+.bor-col-s,
+.bor-col-sec1,
+.bor-col-sec2,
+.bor-col-tx,
+.bor-col-tx1,
+.bor-col-tx2,
+.bor-col-btn,
+.bor-col-btn1,
+.bor-col-btn2,
+/* svg */
+.svg-p path,
+.svg-p1 path,
+.svg-s path,
+.svg-sec1 path,
+.svg-sec2 path,
+.svg-tx path,
+.svg-tx1 path,
+.svg-tx2 path,
+.svg-btn path,
+.svg-btn1 path,
+.svg-btn2 path {
+  transition: all var(--theme-transition-time) ease-in-out;
+}
+
+/*  */
+
+
+
+
+
+/* Delete replace */
+
+/* Flexbox */
+.dis_f_between_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dis_f_align_center {
+  display: flex;
+  align-items: center;
+}
+
+.dis_f_default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dis_f {
+  display: flex;
+}
+
+/* Shadow Box */
+
+.shadow_box_1 {
+  border: 1px solid #000000;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.2);
+  background: var(--background-color);
+}
+
+.shadow_box_2 {
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+  background: var(--background-color);
+}
+
+/* Margin */
+.padding_main {
+  padding-right: 135px;
+  padding-left: 135px;
+}

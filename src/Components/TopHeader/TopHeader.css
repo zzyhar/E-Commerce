@@ -1,38 +1,8 @@
-.top-header-bg {
-    background-color: var(--background-color-black);
-    padding-top: 12px ;
-    padding-bottom: 12px ;
-  }
-  
-  .top-header {
-    width: 100%;
-  }
-  
-  .center-container {
-    gap: 1rem;
-  }
-  
-  .top-header_text {
-    font-family: var(--font-regular);
-    font-size: var(--size-14);
-    color: var(--text-color-light);
-  }
-  
-  .top-header__sales-banner {
-    font-weight: var(--font-wieght-400);
-    
-  }
-  
-  .top-header__shop-btn {
-    font-weight: var(--font-wieght-600);
-    
-    text-align: center;
+.top-notification-bar .default-container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.call-to-action{
     text-decoration: underline;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .top-header__shop-btn:hover, .top-header__languages:hover  {
-    color:  var(--button-color-hover-blue);
-  }
-  
+}
