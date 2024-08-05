@@ -220,14 +220,13 @@ align-items: center;
 
 
 .title-16px-semi {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 48px;
-  /* identical to box height, or 133% */
-  letter-spacing: 0.04em;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
 }
+
 
 .title-24px {
   /* Title/16PX Regular */
@@ -686,6 +685,14 @@ a.tt-underline:hover {
 .bg-hov-btn2:hover {
   background-color: var(--theme-color-button2);
 }
+.bg-hov-btn-hov:hover {
+  background-color: var(--theme-color-hover-button);
+}
+
+.bg-hov-btn-bl:hover {
+  background-color: var(--theme-color-hover-button-blue);
+}
+
 .bg-hov-trp:hover {
   background-color: var(--theme-transparent);
 }
@@ -694,6 +701,7 @@ a.tt-underline:hover {
 
 .br-1px {
   border: 1px;
+  border-style: solid;
 }
 
 .bor-col-p {
@@ -803,6 +811,9 @@ a.tt-underline:hover {
 }
 .br-rad-32px {
   border-radius: 32px;
+}
+.br-rad-cr{
+  border-radius: 50%;
 }
 
 /* ! SVG */

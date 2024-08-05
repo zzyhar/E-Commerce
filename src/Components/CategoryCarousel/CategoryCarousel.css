@@ -1,5 +1,7 @@
 .category-item{
     width: 170px;
-    height: 145px;   
-    
+    height: 145px;      
+}
+.btn-categoty{
+    padding: 11px;
 }
