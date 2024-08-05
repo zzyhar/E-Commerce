@@ -19,26 +19,26 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
   return (
     <Fragment>
       <section className={`timer_container ${className}`}>
-        <section className="timer">
-          <div className="clock">
+        <section className="timer dsfx fx-d-c fx-j-c fx-ai-c">
+          <div className="clock dsfx fx-j-c fx-ai-c">
             <section>
-              <p>{timerDays}</p>
-              <small>Days</small>
+              <p className="title-12px col-tx2">Days</p>
+              <p className="heading-bold-32px col-tx2">{timerDays}</p>
             </section>
             <span>:</span>
             <section>
-              <p>{timerHours}</p>
-              <small>Hours</small>
+              <p className="title-12px col-tx2">Hours</p>
+              <p className="heading-bold-32px col-tx2">{timerHours}</p>
             </section>
             <span>:</span>
             <section>
-              <p>{timerMinutes}</p>
-              <small>Minutes</small>
+              <p className="title-12px col-tx2">Minutes</p>
+              <p className="heading-bold-32px col-tx2">{timerMinutes}</p>
             </section>
             <span>:</span>
             <section>
-              <p>{timerSeconds}</p>
-              <small>Seconds</small>
+              <p className="title-12px col-tx2">Seconds</p>
+              <p className="heading-bold-32px col-tx2">{timerSeconds}</p>
             </section>
           </div>
         </section>

@@ -5,107 +5,38 @@ import IconHandler from "../../shared/ui-components/icon-handler/IconHandler";
 import { pointerIcon } from "../../shared/ui-components/icon-handler/index";
 
 const CtMenu: React.FC = () => {
+  const tsArray = [
+    { title: "Men's Fashion", link: "/mens-fashion" },
+    { title: "Women's Fashion", link: "/womens-fashion" },
+    { title: "Electronics", link: "/electronics" },
+    { title: "Home & Lifestyle", link: "/home-lifestyle" },
+    { title: "Medicine", link: "/medicine" },
+    { title: "Sports & Outdoors", link: "/sports-outdoors" },
+    { title: "Baby's & Toys", link: "/babies-toys" },
+    { title: "Groceries & Pets", link: "/groceries-pets" },
+    { title: "Health & Beauty", link: "/health-beauty" },
+  ];
+
   return (
-    <div className="outer-line">
-      <div className="menu dsfx fx-d-c  f-gap-16px mr-16px mt-40px">
-        <Link
-          className="menu_option dsfx fx-j-sb title-16px col-tx2 svg-hov-btn2"
-          to="/mens-fashion"
-        >
-          Men's Fashion
-          <IconHandler
-            className="icon svg-p1 cursor-pointer"
-            path={pointerIcon}
-            iconSize="16x16"
-          ></IconHandler>
-        </Link>
-
-        <Link
-          className="menu_option dsfx fx-j-sb title-16px col-tx2 svg-hov-btn2"
-          to="/electronics"
-        >
-          Electronics
-          <IconHandler
-            className="icon svg-p1 cursor-pointer"
-            path={pointerIcon}
-            iconSize="16x16"
-          ></IconHandler>
-        </Link>
-
-        <Link
-          className="menu_option dsfx fx-j-sb title-16px col-tx2 svg-hov-btn2"
-          to="/home-lifestyle"
-        >
-          Home & Lifestyle
-          <IconHandler
-            className="icon svg-p1 cursor-pointer"
-            path={pointerIcon}
-            iconSize="16x16"
-          ></IconHandler>
-        </Link>
-
-        <Link
-          className="menu_option dsfx fx-j-sb title-16px col-tx2 svg-hov-btn2"
-          to="/medicine"
-        >
-          Medicine
-          <IconHandler
-            className="icon svg-p1 cursor-pointer"
-            path={pointerIcon}
-            iconSize="16x16"
-          ></IconHandler>
-        </Link>
-
-        <Link
-          className="menu_option dsfx fx-j-sb title-16px col-tx2 f-gap-28px svg-hov-btn2"
-          to="/sports-outdoors"
-        >
-          Sports & Outdoors
-          <IconHandler
-            className="icon svg-p1 cursor-pointer"
-            path={pointerIcon}
-            iconSize="16x16"
-          ></IconHandler>
-        </Link>
-
-        <Link
-          className="menu_option dsfx fx-j-sb title-16px col-tx2 svg-hov-btn2"
-          to="/babies-toys"
-        >
-          Baby's & Toys
-          <IconHandler
-            className="icon svg-p1 cursor-pointer"
-            path={pointerIcon}
-            iconSize="16x16"
-          ></IconHandler>
-        </Link>
-
-        <Link
-          className="menu_option dsfx fx-j-sb title-16px col-tx2 svg-hov-btn2"
-          to="/groceries-pets"
-        >
-          Groceries & Pets
-          <IconHandler
-            className="icon svg-p1 cursor-pointer"
-            path={pointerIcon}
-            iconSize="16x16"
-          ></IconHandler>
-        </Link>
-
-        <Link
-          className="menu_option dsfx fx-j-sb title-16px col-tx2 svg-hov-btn2"
-          to="/health-beauty"
-        >
-          Health & Beauty
-          <IconHandler
-            className="icon cursor-pointer"
-            path={pointerIcon}
-            iconSize="16x16"
-          ></IconHandler>
-        </Link>
+    <>
+      <div className="menu dsfx fx-d-c f-gap-16px mt-40px">
+        {tsArray.map((item, index) => (
+          <Link
+            key={index}
+            className="dsfx fx-j-sb fx-ai-c title-16px col-tx2 svg-trp svg-hov-btn2 cursor-pointer"
+            to={item.link}
+          >
+            {item.title}
+            <IconHandler
+              className=""
+              path={pointerIcon}
+              iconSize="16x16"
+            ></IconHandler>
+          </Link>
+        ))}
       </div>
-      <div className="line"></div>
-    </div>
+      <div className="ver-div bg-col-tx1"></div>
+    </>
   );
 };
 

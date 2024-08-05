@@ -6,15 +6,17 @@ import { CarouselData } from "../../types";
 import slidesData from "../../data/carouselData.json";
 // import FlashSaleProduct from "../FlashSale/FlashSaleProduct";
 import FlashSaleCarousel from "../FlashSaleCarousel/FlashSaleCarousel";
+import CategoryCarousel from "../CategoryCarousel/CategoryCarousel";
 
 const HomePage: React.FC = () => {
   return (
     <>
-      <div className="home_page default-container">
+      <div className="default-container mb-140px dsfx f-gap-16px fx-j-sb">
         <CtMenu />
         <Carousel data={slidesData as CarouselData} />
       </div>
       <FlashSaleCarousel />
+      <CategoryCarousel />
     </>
   );
 };

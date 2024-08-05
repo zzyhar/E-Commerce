@@ -1,7 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faEye, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./FlashSaleProduct.css";
+
+import {
+  eyeIcon,
+  heartIcon,
+} from "../../shared/ui-components/icon-handler/index";
+import IconHandler from "../../shared/ui-components/icon-handler/IconHandler";
 
 const FlashSaleProduct: React.FC = () => {
   const imageRef = useRef<HTMLDivElement>(null);
@@ -56,27 +62,39 @@ const FlashSaleProduct: React.FC = () => {
   return (
     <div>
       <div
-        className="image"
+        className="image br-rad-4px mb-16px"
         ref={imageRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         style={{ backgroundImage: `url(${images[0]})` }}
       >
-        <div className="discount">-40%</div>
-        <div className="icons">
-          <div className="heart">
-            <FontAwesomeIcon icon={faHeart} />
+        <div className="discount dsfx fx-j-c fx-ai-c title-12px col-tx mt-12px ml-12px bg-col-btn2 br-rad-4px">
+          -40%
+        </div>
+        <div className="icons dsfx fx-d-c f-gap-8px">
+          <div className="heart  dsfx fx-ai-c fx-j-c bg-col-p  cursor-pointer">
+            <IconHandler
+              className=""
+              path={heartIcon}
+              iconSize="16x16"
+            ></IconHandler>
           </div>
-          <div className="eye">
-            <FontAwesomeIcon icon={faEye} />
+          <div className="eye dsfx fx-ai-c fx-j-c bg-col-p cursor-pointer ">
+            <IconHandler
+              className="cursor-pointer"
+              path={eyeIcon}
+              iconSize="16x16"
+            ></IconHandler>
           </div>
         </div>
-        <div className="addToCart">Add to Cart</div>
+        <div className="addToCart dsfx fx-j-c fx-ai-c col-p bg-col-btn ">
+          Add to Cart
+        </div>
       </div>
-      <div className="description">
-        <p className="title">HAVIT HV-G92 Gamepad</p>
-        <div className="price">
-          <div className="regular_price">$120</div>
+      <div className="description dsfx fx-d-c fx-ai-fs f-gap-8px">
+        <p className="title-medium-16px col-tx2">HAVIT HV-G92 Gamepad</p>
+        <div className="price dsfx">
+          <div className="regular_price col-sec2 mr-8px">$120</div>
           <div className="discount_price">$160</div>
         </div>
         <div className="rating">

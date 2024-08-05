@@ -10,59 +10,62 @@ import {
 } from "../../shared/ui-components/icon-handler/index";
 
 const Header: React.FC = () => (
-  <div className="outer-line-header">
+  <>
     <TopHeader />
-    <div className="default-container">
-      <header className="header dsfx mb-16px fx-j-sb fx-ai-c mb-40px">
-        <div className="logo heading-bold-24px col-tx2 dfsx">Exclusive</div>
-        <nav className="dsfx fx-d-r fx-ai-s f-gap-48px">
-          <Link className="nav-item title-16px col-tx2" to="/home">
-            Home
-          </Link>
-          <Link className="nav-item title-16px col-tx2" to="/contact">
-            Contact
-          </Link>
-          <Link className="nav-item title-16px col-tx2" to="/about">
-            About
-          </Link>
-          <Link className="nav-item title-16px col-tx2" to="/signup">
-            Sign Up
-          </Link>
-        </nav>
+    <header className="default-container main-navbar dsfx mb-16px mt-40px fx-j-sb fx-ai-c">
+      <p className="logo heading-bold-24px col-tx2 ">Exclusive</p>
+      <nav className="dsfx fx-d-r fx-ai-s f-gap-48px">
+        <Link className="nav-item title-16px col-tx2 tt-underline" to="/home">
+          Home
+        </Link>
+        <Link
+          className="nav-item title-16px col-tx2 tt-underline"
+          to="/contact"
+        >
+          Contact
+        </Link>
+        <Link className="nav-item title-16px col-tx2 tt-underline" to="/about">
+          About
+        </Link>
+        <Link className="nav-item title-16px col-tx2 tt-underline" to="/signup">
+          Sign Up
+        </Link>
+      </nav>
 
-        <div className="dsfx fx-j-sb fx-ai-c">
-          <div className="search-box dsfx f-gap-34px br-1px br-rad-4px bor-col-s bg-col-s mr-24px">
-            <input
-              type="text"
-              placeholder="What are you looking for?"
-              className="search-input bg-col-s title-12px col-"
-            />
+      <div className="dsfx fx-j-sb fx-ai-c">
+        <div className="search-box dsfx f-gap-32px br-rad-4px bg-col-s mr-24px cursor-pointer fx-ai-e">
+          <input
+            type="text"
+            placeholder="What are you looking for?"
+            className="search-input bg-col-s title-12px"
+          />
+          <IconHandler
+            className="svg-p1"
+            path={searchIcon}
+            iconSize="16x16"
+          ></IconHandler>
+        </div>
+        <div className="dsfx f-gap-16px fx-ai-c">
+          <Link to="/favorites">
             <IconHandler
               className="svg-p1 svg-hov-btn2 cursor-pointer"
-              path={searchIcon}
+              path={heartIcon}
               iconSize="20x20"
             ></IconHandler>
-          </div>
-          <div className="dis_f_default icons-container f-gap-16px">
-            <Link to="/favorites">
-              <IconHandler
-                className="svg-p1 svg-hov-btn2 cursor-pointer"
-                path={heartIcon}
-                iconSize="28x28"
-              ></IconHandler>
-            </Link>
-            <Link to="/cart">
-              <IconHandler
-                className="svg-p1 svg-hov-btn2 cursor-pointer"
-                path={cartIcon}
-                iconSize="32x32"
-              ></IconHandler>
-            </Link>
-          </div>
+          </Link>
+          <Link to="/cart">
+            <IconHandler
+              className="svg-p1 svg-hov-btn2 cursor-pointer"
+              path={cartIcon}
+              iconSize="24x24"
+            ></IconHandler>
+          </Link>
         </div>
-      </header>
-    </div>
-  </div>
+      </div>
+    </header>
+
+    <div className="hor-div bg-col-tx1"></div>
+  </>
 );
 
 export default Header;

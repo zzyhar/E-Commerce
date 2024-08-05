@@ -1,18 +1,8 @@
-.heading {
-    display: flex;
-    align-items: center;
-    gap: 16px; 
-    margin-left: 7vw;
-    width: 81.75vw;
-    margin-bottom: 13px;
-    
-}
 
 .marker {
     width: 20px;
     height: 40px;
-    background: #DB4444;
-    border-radius: 4px;
+
 }
 
 .title {

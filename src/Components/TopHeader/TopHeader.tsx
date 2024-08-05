@@ -4,7 +4,7 @@ import { pointerDownIcon } from "../../shared/ui-components/icon-handler/index";
 
 function TopHeader() {
   return (
-    <div className="top-notification-bar bg-col-btn mb-40px">
+    <div className="top-notification-bar bg-col-btn ">
       <div className="default-container dsfx f-gap-16px fx-j-sb fx-ai-c">
         {/* Space placeholder */}
         <div></div>

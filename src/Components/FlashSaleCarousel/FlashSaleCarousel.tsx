@@ -60,45 +60,38 @@ const FlashSaleCarousel: React.FC = () => {
   // };
 
   return (
-    <div className="flash_carousel">
+    <div className="default-container">
       <Marker text="Today's" />
-
-      <div className="flash_countdown_header">
-        <h1 className="flash_title">Flash Sale</h1>
+      <div className="dsfx fx-ai-end f-gap-84px mt-24px mb-40px">
+        <h1 className="heading-36px col-tx2 ">Flash Sales</h1>
         <CountdownTimer
           timerDays={formatNumber(timerDays)}
           timerHours={formatNumber(timerHours)}
           timerMinutes={formatNumber(timerMinutes)}
           timerSeconds={formatNumber(timerSeconds)}
-          className="countdown"
         />
       </div>
-      <div className="carousel_flashsale">
+      <div className="dsfx f-gap-32px fx-j-c">
         <button className="carousel_flashsale_left">
           <FontAwesomeIcon icon={faArrowLeft} />
         </button>
         <FlashSaleProduct />
         <FlashSaleProduct />
         <FlashSaleProduct />
-        <FlashSaleProduct />
-        <FlashSaleProduct />
+
         <button className="carousel_flashsale_right">
           <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
-      <div className="link_to_sale_wrapper">
-        <Link to="/sale_products" className="link_to_sale">
+      <div className="dsfx fx-j-c fx-ai-c mt-60px mb-60px">
+        <Link
+          to="/sale_products"
+          className="link_to_sale dsfx fx-j-c fx-ai-c br-rad-4px bg-col-btn2 col-tx title-16px"
+        >
           View All Products
         </Link>
       </div>
       <div className="line_spilitter"></div>
-      <div className="categories">
-        <div className="category_carousel_header">
-          <Marker text="Categories" />
-          <h1 className="category_title">Browse By Category</h1>
-        </div>
-        <div className="categories_carousel"></div>
-      </div>
     </div>
   );
 };
