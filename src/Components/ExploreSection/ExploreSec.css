@@ -1,0 +1,5 @@
+.best-seeling-procuts-sec{
+display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 2 columns */
+  grid-template-rows: repeat(2, 1fr); /* Create 2 rows */
+}   

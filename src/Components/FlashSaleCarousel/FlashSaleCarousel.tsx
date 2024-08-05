@@ -6,6 +6,7 @@ import CountdownTimer from "../Countdown Timer/CountdownTimer";
 import FlashSaleProduct from "../FlashSale/FlashSaleProduct";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import ViewAllBtn from "../../shared/ui-components/ViewAllBtn/ViewAllBtn";
 
 const FlashSaleCarousel: React.FC = () => {
   const [timerDays, setTimerDays] = useState<number>(0);
@@ -84,12 +85,7 @@ const FlashSaleCarousel: React.FC = () => {
         </button>
       </div>
       <div className="dsfx fx-j-c fx-ai-c mt-60px mb-60px">
-        <Link
-          to="/sale_products"
-          className="link_to_sale dsfx fx-j-c fx-ai-c br-rad-4px bg-col-btn2 col-tx title-16px"
-        >
-          View All Products
-        </Link>
+        <ViewAllBtn to="/sale-products" title="View All Products" />
       </div>
       <div className="line_spilitter"></div>
     </div>

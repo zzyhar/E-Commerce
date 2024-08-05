@@ -1,0 +1,32 @@
+.bg {
+    position: relative; 
+}
+.ps5 {
+    position: absolute;
+    bottom: 7px;
+    left:29px;
+}
+.ruler{
+    position: absolute;
+    bottom: 32px; 
+    left: 32px; 
+    z-index: 2; 
+}
+
+.wm{
+    position: absolute;
+    left: 138px;
+}
+.wm-ruler{ 
+    position: absolute;
+    bottom: 24px; 
+    left: 24px; 
+    z-index: 2; 
+}
+
+.pr{
+    position: absolute;
+    left: 30px; 
+    top: 30px;
+}
+

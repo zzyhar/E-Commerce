@@ -54,6 +54,9 @@ input {
 a {
   text-decoration: none;
 }
+.undeline{
+  text-decoration: underline;
+}
 
 /*********************** Critical CSS ********************************/
 :root {
@@ -163,6 +166,18 @@ line-height: 30px;
 /* or 94% */
 letter-spacing: 0.04em;
 }
+.heading-semi-24px {
+/* Heading/24PX SemiBold */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 100% */
+letter-spacing: 0.03em;
+}
+
+
 
 
 .heading-36px {
@@ -193,8 +208,7 @@ letter-spacing: 0.04em;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height, or 150% */
-  text-align: center;
+
 }
 
 .title-16px {
@@ -226,6 +240,29 @@ font-weight: 600;
 font-size: 16px;
 line-height: 20px;
 }
+.title-semi-20px{
+
+/* Title/20PX Semibold */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+
+}
+
+.title-medium-20px{
+  /* Title/20PX Medium */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+
+}
+
+
+
 
 
 .title-24px {
@@ -398,6 +435,9 @@ a.tt-underline:hover {
   margin-top: 40px;
 }
 .mt-60px {
+  margin-top: 60px;
+}
+.mt-80px {
   margin-top: 60px;
 }
 
@@ -914,6 +954,11 @@ a.tt-underline:hover {
   fill: var(--theme-color-button2);
   stroke:  var(--theme-color-button2);
 }
+.svg-hov-trp:hover path {
+  fill: var(--theme-transparent);
+  stroke:  var(--theme-transparent);
+}
+
 .svg-hov-trp:hover path {
   fill: var(--theme-transparent);
   stroke:  var(--theme-transparent);

@@ -8,7 +8,10 @@ import slidesData from "../../data/carouselData.json";
 import FlashSaleCarousel from "../FlashSaleCarousel/FlashSaleCarousel";
 import CategoryCarousel from "../CategoryCarousel/CategoryCarousel";
 import BestSelling from "../Best Selling/BestSelling";
-import ExploreSec from "../Explore Section/ExploreSec";
+import ExploreSec from "../ExploreSection/ExploreSec";
+import Banner from "../FeaturedSection/Banner";
+import Perks from "../PerksSection/Perks";
+import Footer from "../Footer/Footer";
 
 const HomePage: React.FC = () => {
   return (
@@ -21,6 +24,9 @@ const HomePage: React.FC = () => {
       <CategoryCarousel />
       <BestSelling />
       <ExploreSec />
+      <Banner />
+      <Perks />
+      <Footer />
     </>
   );
 };
