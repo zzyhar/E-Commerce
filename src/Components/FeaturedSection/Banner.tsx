@@ -11,11 +11,8 @@ const Banner: React.FC = () => {
       <div className="dsfx fx-d-r f-gap-32px mb-140px">
         <div>
           <div className="bg">
-            <img src="../../../public/assets/NewArrival/big.png" />
-            <img
-              className="ps5"
-              src="../../../public/assets/NewArrival/ps5.png"
-            />
+            <img src="/assets/NewArrival/big.png" />
+            <img className="ps5" src="/assets/NewArrival/ps5.png" />
             <div className="dsfx fx-d-c f-gap-16px ruler">
               <h1 className="heading-semi-24px col-tx">Playstation 5</h1>
               <p className="title-14px col-tx">
@@ -31,10 +28,10 @@ const Banner: React.FC = () => {
         <div className="dsfx fx-d-c bg f-gap-32px">
           <div className="bg">
             <div>
-              <img src="../../../public/assets/NewArrival/med.png" />
+              <img src="/assets/NewArrival/med.png" />
               <img
                 className="wm"
-                src="../../../public/assets/NewArrival/attractive-woman-wearing-hat-posing-black-background 1.png"
+                src="/assets/NewArrival/attractive-woman-wearing-hat-posing-black-background 1.png"
               />
             </div>
             <div className="dsfx fx-d-c f-gap-16px wm-ruler">
@@ -51,11 +48,8 @@ const Banner: React.FC = () => {
           <div className="dsfx f-d-r f-gap-32px">
             <div className="bg">
               <div>
-                <img src="../../../public/assets/NewArrival/small.png" />
-                <img
-                  className="pr"
-                  src="../../../public/assets/NewArrival/Speaker.png"
-                />
+                <img src="/assets/NewArrival/small.png" />
+                <img className="pr" src="/assets/NewArrival/Speaker.png" />
               </div>
               <div className="dsfx fx-d-c f-gap-16px wm-ruler">
                 <h1 className="heading-semi-24px col-tx ">Speakers</h1>
@@ -68,11 +62,8 @@ const Banner: React.FC = () => {
 
             <div className="bg">
               <div>
-                <img src="../../../public/assets/NewArrival/small.png" />
-                <img
-                  className="pr"
-                  src="../../../public/assets/NewArrival/parfume.png"
-                />
+                <img src="/assets/NewArrival/small.png" />
+                <img className="pr" src="/assets/NewArrival/parfume.png" />
                 <div className="dsfx fx-d-c f-gap-16px wm-ruler">
                   <h1 className="heading-semi-24px col-tx">Perfume</h1>
                   <p className="title-14px col-tx">GUCCI INTENSE OUD EDP</p>

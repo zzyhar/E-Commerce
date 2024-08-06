@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./FlashSaleCarousel.css";
 import Marker from "../Marker/Marker";
-import CountdownTimer from "../Countdown Timer/CountdownTimer";
+import CountdownTimer from "../Countdown Timers/CountDown/CountdownTimer";
 import FlashSaleProduct from "../FlashSale/FlashSaleProduct";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";

@@ -1,4 +1,5 @@
 import "./OneProductBanner.css";
+import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ReverseCountDown from "../Countdown Timers/ReverseCountdown/ReverseCountdown";
@@ -45,10 +46,7 @@ const OneProductBanner: React.FC = () => {
   return (
     <>
       <div className="default-container dsfx fx-d-r mb-72px p-relative">
-        <img
-          src="../../../public/assets/BannerOneProduct/Frame 600.png"
-          alt=""
-        />
+        <img src="/assets/BannerOneProduct/Frame 600.png" alt="" />
         <div className="p-absolute block-holder m-56px dsfx f-gap-56px">
           <div className="dsfx fx-d-c f-gap-32px left-side">
             <p className="categories title-semi-16px col-btn1">Categories</p>
@@ -71,10 +69,7 @@ const OneProductBanner: React.FC = () => {
             </Link>
           </div>
           <div className="right-image-holder dsfx fx-ai-c">
-            <img
-              src="../../../public/assets/BannerOneProduct/speaker_big.png"
-              alt=""
-            />
+            <img src="/assets/BannerOneProduct/speaker_big.png" alt="" />
           </div>
         </div>
       </div>

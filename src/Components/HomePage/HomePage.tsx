@@ -12,7 +12,7 @@ import ExploreSec from "../ExploreSection/ExploreSec";
 import Banner from "../FeaturedSection/Banner";
 import Perks from "../PerksSection/Perks";
 import Footer from "../Footer/Footer";
-import OneProductBanner from "../Banner/OneProductBanner";
+import OneProductBanner from "../OneProductBanner/OneProductBanner";
 
 const HomePage: React.FC = () => {
   return (

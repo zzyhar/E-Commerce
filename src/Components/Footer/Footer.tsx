@@ -88,12 +88,12 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="mt-8 dsfx fx-d-r f-gap-12px">
                   <div>
-                    <img src="../../../public/assets/FooterImages/Qr Code.png" />
+                    <img src="/assets/FooterImages/Qr Code.png" />
                   </div>
                   <div className="dsfx fx-d-c f-gap-12px">
-                    <img src="../../../public/assets/FooterImages/download-appstore.png" />
+                    <img src="/assets/FooterImages/download-appstore.png" />
                     <img
-                      src="../../../public/assets/FooterImages/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.png"
+                      src="/assets/FooterImages/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.png"
                       alt=""
                     />
                   </div>
