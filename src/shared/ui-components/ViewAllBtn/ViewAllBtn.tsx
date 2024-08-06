@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./ViewAllBtn.css";
 
 interface ViewAllBtnProps {
   to: string;

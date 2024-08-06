@@ -1,0 +1,18 @@
+.block-holder {
+    top: 0;
+    left: 0;
+    padding: 56px;
+
+    height: calc(100% - 56px * 2);
+    width: calc(100% - 56px * 2);
+}
+
+.block-holder .left-side{
+    width: 443px;
+}
+
+.block-holder .right-image-holder img {
+    width: fit-content;
+}
+
+

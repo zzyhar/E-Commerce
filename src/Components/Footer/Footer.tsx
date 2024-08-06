@@ -27,20 +27,18 @@ const Footer: React.FC = () => {
               <p className="title-16px mt-24px col-tx">
                 Get 10% off your first order
               </p>
-              <div>
+              <div className="footer-input dsfx fx-j-c fx-ai-c br-1px br-rad-4px bor-col-tx mt-16px">
                 <input
-                  className="footer-input br-1px br-rad-4px mt-16px bor-col-tx title-16px bg-col-btn"
+                  className=" title-16px ml-16px mt-12px mb-12px bg-col-btn"
                   type="text"
                   placeholder="Enter your email"
-                
-                >
-                    <IconHandler
+                />
+                <IconHandler
                   path={sendIcon}
                   iconSize="24x24"
                   className="svg-tx"
                 />
-                </>
-                
+                <div />
               </div>
             </div>
             {/* Support */}

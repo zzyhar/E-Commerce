@@ -37,13 +37,13 @@ const Header: React.FC = () => (
           <input
             type="text"
             placeholder="What are you looking for?"
-            className="search-input bg-col-s title-12px"
+            className="search-input bg-col-s title-12px cursor-pointer"
           />
           <IconHandler
-            className="svg-p1"
             path={searchIcon}
             iconSize="16x16"
-          ></IconHandler>
+            className="svg-tx2 cursor-pointer"
+          />
         </div>
         <div className="dsfx f-gap-16px fx-ai-c">
           <Link to="/favorites">

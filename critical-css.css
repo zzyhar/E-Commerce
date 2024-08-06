@@ -1,50 +1,131 @@
 /* Reset CSS */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 input {
-  border: none; 
+  border: none;
   padding: 0px;
   margin: 0px;
   outline: none;
@@ -54,7 +135,7 @@ input {
 a {
   text-decoration: none;
 }
-.undeline{
+.undeline {
   text-decoration: underline;
 }
 
@@ -113,7 +194,6 @@ a {
 
 /* ! Font clases based on design + proper naming */
 
-
 /***********/
 /*  Layout */
 /***********/
@@ -128,6 +208,14 @@ body {
   background-color: var(--theme-color-bg);
 }
 
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
 .hor-div {
   height: 1px;
 }
@@ -139,6 +227,14 @@ body {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.w-f-c {
+  width: fit-content;
+}
+
+.h-f-c {
+  height: fit-content;
 }
 
 /***********/
@@ -157,28 +253,25 @@ body {
 }
 
 .heading-bold-32px {
-/* Heading/32PX Bold */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 30px;
-/* or 94% */
-letter-spacing: 0.04em;
+  /* Heading/32PX Bold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 30px;
+  /* or 94% */
+  letter-spacing: 0.04em;
 }
 .heading-semi-24px {
-/* Heading/24PX SemiBold */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 24px;
-/* identical to box height, or 100% */
-letter-spacing: 0.03em;
+  /* Heading/24PX SemiBold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+  letter-spacing: 0.03em;
 }
-
-
-
 
 .heading-36px {
   /* Heading/36PX SemiBold */
@@ -186,9 +279,26 @@ letter-spacing: 0.03em;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  line-height: 48px;
-  /* identical to box height, or 133% */
+  
+}
+
+.heading-semi-48px {
+  /* Heading/48PX SemiBold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  /* or 125% */
   letter-spacing: 0.04em;
+}
+
+.title-11px {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
 }
 
 .title-12px {
@@ -200,7 +310,6 @@ letter-spacing: 0.03em;
   line-height: 18px;
 }
 
-
 .title-14px {
   /* Title/14PX Regular */
   font-family: "Poppins";
@@ -208,7 +317,6 @@ letter-spacing: 0.03em;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-
 }
 
 .title-16px {
@@ -218,52 +326,41 @@ letter-spacing: 0.03em;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-  text-align: center;
 }
 
 .title-medium-16px {
   /* Title/16PX Medium */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
-
 
 .title-16px-semi {
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
 }
-.title-semi-20px{
-
-/* Title/20PX Semibold */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 28px;
-
+.title-semi-20px {
+  /* Title/20PX Semibold */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
 }
 
-.title-medium-20px{
+.title-medium-20px {
   /* Title/20PX Medium */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 28px;
-
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
 }
-
-
-
-
 
 .title-24px {
   /* Title/16PX Regular */
@@ -272,8 +369,6 @@ line-height: 28px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-  text-align: center;
 }
 
 /***********/
@@ -396,14 +491,19 @@ a.tt-underline:hover {
 .f-gap-48px {
   gap: 48px;
 }
+
+.f-gap-56px {
+   gap: 56px;
+}
+
 .f-gap-84px {
   gap: 84px;
 }
 
-
 /**************/
 /*   Margins   */
 /**************/
+
 .mt-2px {
   margin-top: 2px;
 }
@@ -475,7 +575,10 @@ a.tt-underline:hover {
 .mb-60px {
   margin-bottom: 60px;
 }
-.mb-140px{
+.mb-72px {
+  margin-bottom: 72px;
+}
+.mb-140px {
   margin-bottom: 140px;
 }
 
@@ -547,6 +650,11 @@ a.tt-underline:hover {
 .p-16px {
   padding: 16px;
 }
+
+.p-16-48px {
+  padding: 16px 48px;
+}
+
 .p-20px {
   padding: 16px;
 }
@@ -561,6 +669,10 @@ a.tt-underline:hover {
 }
 .p-40px {
   padding: 40px;
+}
+
+.p-56px {
+  padding: 56px;
 }
 
 /* ! Colors */
@@ -648,7 +760,6 @@ a.tt-underline:hover {
 .col-hov-trp:hover {
   color: var(--theme-transparent);
 }
-
 
 /* ! Bg colors */
 
@@ -852,7 +963,7 @@ a.tt-underline:hover {
 .br-rad-32px {
   border-radius: 32px;
 }
-.br-rad-cr{
+.br-rad-cr {
   border-radius: 50%;
 }
 
@@ -897,15 +1008,15 @@ a.tt-underline:hover {
 }
 .svg-btn1 path {
   fill: var(--theme-color-button1);
-  stroke:  var(--theme-color-button1);
+  stroke: var(--theme-color-button1);
 }
 .svg-btn2 path {
   fill: var(--theme-color-button2);
-  stroke:  var(--theme-color-button2);
+  stroke: var(--theme-color-button2);
 }
 .svg-trp path {
   fill: var(--theme-transparent);
-  stroke:  var(--theme-transparent);
+  stroke: var(--theme-transparent);
 }
 
 /* Hover */
@@ -948,20 +1059,20 @@ a.tt-underline:hover {
 }
 .svg-hov-btn1:hover path {
   fill: var(--theme-color-button1);
-  stroke:  var(--theme-color-button1);
+  stroke: var(--theme-color-button1);
 }
 .svg-hov-btn2:hover path {
   fill: var(--theme-color-button2);
-  stroke:  var(--theme-color-button2);
+  stroke: var(--theme-color-button2);
 }
 .svg-hov-trp:hover path {
   fill: var(--theme-transparent);
-  stroke:  var(--theme-transparent);
+  stroke: var(--theme-transparent);
 }
 
 .svg-hov-trp:hover path {
   fill: var(--theme-transparent);
-  stroke:  var(--theme-transparent);
+  stroke: var(--theme-transparent);
 }
 
 /* !  */
@@ -970,7 +1081,6 @@ a.tt-underline:hover {
 }
 
 /* ! All classes from the top line up */
-
 
 .col-p,
 .col-p1,

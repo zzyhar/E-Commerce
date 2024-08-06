@@ -8,7 +8,6 @@ const Banner: React.FC = () => {
         <Marker text="Featured" />
         <h1 className="heading-36px col-tx2 ">New Arrivals</h1>
       </div>
-      {/* image */}
       <div className="dsfx fx-d-r f-gap-32px mb-140px">
         <div>
           <div className="bg">

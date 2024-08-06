@@ -12,6 +12,7 @@ import ExploreSec from "../ExploreSection/ExploreSec";
 import Banner from "../FeaturedSection/Banner";
 import Perks from "../PerksSection/Perks";
 import Footer from "../Footer/Footer";
+import OneProductBanner from "../Banner/OneProductBanner";
 
 const HomePage: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage: React.FC = () => {
       <FlashSaleCarousel />
       <CategoryCarousel />
       <BestSelling />
+      <OneProductBanner />
       <ExploreSec />
       <Banner />
       <Perks />
