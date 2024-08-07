@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Header from "./Components/Header/Header";
-import HomePage from "./Components/HomePage/HomePage";
+import TopHeader from "./Components/TopHeader/TopHeader";
+// import HomePage from "./Components/HomePage/HomePage";
+import AboutPage from "./Components/AboutPage/AboutPage";
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Header />
-      <HomePage />
+      <TopHeader />
+      <AboutPage />
+      {/* <HomePage /> */}
     </Router>
   );
 };

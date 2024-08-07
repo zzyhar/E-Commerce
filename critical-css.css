@@ -262,6 +262,20 @@ body {
   /* or 94% */
   letter-spacing: 0.04em;
 }
+
+.heading-medium-32px{
+  /* Heading/32PX Medium */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 30px;
+/* identical to box height, or 94% */
+letter-spacing: 0.04em;
+}
+
+
+
 .heading-semi-24px {
   /* Heading/24PX SemiBold */
   font-family: "Inter";
@@ -292,6 +306,26 @@ body {
   /* or 125% */
   letter-spacing: 0.04em;
 }
+
+.heading-semi-54px{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 54px;
+line-height: 64px;
+}
+
+.title-reg{ 
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+}
+
+
+
+
 
 .title-11px {
   font-family: "Poppins";
@@ -1134,4 +1168,29 @@ a.tt-underline:hover {
 .svg-btn2 path,
 .svg-trp path {
   transition: all var(--theme-transition-time) ease-in-out;
+}
+
+
+.br-op-30{
+  border: 1px solid rgb(0, 0, 0, .3);
+}
+
+
+.op-40{
+  opacity: 40%;
+}
+.op-100:hover { 
+  opacity: 100;
+}
+
+.op-hov-20:hover { 
+  opacity: 10%;
+}
+
+.op-50{
+  opacity: 50%;
+}
+
+.op-70{
+  opacity: 50%;
 }

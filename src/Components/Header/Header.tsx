@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import TopHeader from "../TopHeader/TopHeader";
 import "./Header.css";
 import IconHandler from "../../shared/ui-components/icon-handler/IconHandler";
 import {
@@ -11,7 +10,6 @@ import {
 
 const Header: React.FC = () => (
   <>
-    <TopHeader />
     <header className="default-container main-navbar dsfx mb-16px mt-40px fx-j-sb fx-ai-c">
       <p className="logo heading-bold-24px col-tx2 ">Exclusive</p>
       <nav className="dsfx fx-d-r fx-ai-s f-gap-48px">

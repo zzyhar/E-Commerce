@@ -4,7 +4,7 @@ import {
   linkedInIcon,
   facebookIcon,
   twitterIcon,
-  insatgramIcon,
+  instagramIcon,
   copyRightIcon,
   sendIcon,
 } from "../../shared/ui-components/icon-handler/index.ts";
@@ -98,25 +98,25 @@ const Footer: React.FC = () => {
                     />
                   </div>
                 </div>
-                <div className="dsfx fx-d-r f-gap-24px mt-24px">
+                <div className="dsfx fx-d-r fx-ai-c fx-j-c f-gap-24px mt-24px svg-p">
                   <IconHandler
                     path={facebookIcon}
-                    iconSize="16x16"
+                    iconSize="20x20"
                     className="svg-p"
                   />
                   <IconHandler
                     path={twitterIcon}
-                    iconSize="24x24"
+                    iconSize="28x28"
                     className="svg-p"
                   />
                   <IconHandler
-                    path={insatgramIcon}
+                    path={instagramIcon}
                     iconSize="24x24"
                     className="svg-p"
                   />
                   <IconHandler
                     path={linkedInIcon}
-                    iconSize="24x24"
+                    iconSize="28x28"
                     className="svg-p"
                   />
                 </div>

@@ -1,0 +1,19 @@
+.ab-perk{
+    width: calc((100% - 3 * 32px) / 4);
+    padding: 16px;
+}
+
+    
+  .parent:hover > .child {
+    background-color: rgba(248, 248, 248, 0.42);
+    color : var(--theme-color-primary);
+  }
+  
+  .parent:hover .сhild1 {
+    background-color: var(--theme-color-primary); 
+    opacity: 100%;
+  }
+  
+  .parent:hover p {
+    color: var(--theme-color-primary);
+  }
