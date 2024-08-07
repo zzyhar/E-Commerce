@@ -1,0 +1,20 @@
+.input-field{ 
+    border-bottom: 1px solid rgb(0, 0, 0, .4);
+}
+
+.form-submit{ 
+    padding: 24px 112px;
+}
+
+
+.login{
+    text-decoration: underline;
+}
+
+.login-image{
+    left: 135px;
+}
+
+.class{
+    text-align: left;
+}

@@ -241,6 +241,25 @@ body {
 /*   Fonts */
 /***********/
 
+.heading-110px{
+  /* 404 Not Found */
+
+width: 829px;
+height: 115px;
+
+/* Heading/110PX Medium */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 110px;
+line-height: 115px;
+/* identical to box height, or 105% */
+letter-spacing: 0.03em;
+
+
+}
+
+
 .heading-bold-24px {
   /* Heading/24PX Bold */
   font-family: "Inter";
@@ -294,6 +313,17 @@ letter-spacing: 0.04em;
   font-weight: 600;
   font-size: 36px;
   
+}
+
+.heading-medium-36px {
+/* Heading/36PX Medium */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 30px;
+/* identical to box height, or 83% */
+letter-spacing: 0.04em;
 }
 
 .heading-semi-48px {
@@ -494,6 +524,10 @@ a.tt-underline:hover {
   gap: 2px;
 }
 
+.f-gap-40px {
+  gap: 40px;
+}
+
 .f-gap-4px {
   gap: 4px;
 }
@@ -575,6 +609,11 @@ a.tt-underline:hover {
   margin-top: 60px;
 }
 
+.mt-140px {
+  margin-top: 140px;
+}
+
+
 /* Margin bottom */
 .mb-2px {
   margin-bottom: 2px;
@@ -606,8 +645,14 @@ a.tt-underline:hover {
 .mb-40px {
   margin-bottom: 40px;
 }
+.mb-48px {
+  margin-bottom: 48px;
+}
 .mb-60px {
   margin-bottom: 60px;
+}
+.mb-66px {
+  margin-bottom: 646x;
 }
 .mb-72px {
   margin-bottom: 72px;
@@ -1194,3 +1239,5 @@ a.tt-underline:hover {
 .op-70{
   opacity: 50%;
 }
+
+
