@@ -242,10 +242,6 @@ body {
 /***********/
 
 .heading-110px{
-  /* 404 Not Found */
-
-width: 829px;
-height: 115px;
 
 /* Heading/110PX Medium */
 font-family: 'Inter';
@@ -555,6 +551,10 @@ a.tt-underline:hover {
   gap: 16px;
 }
 
+.f-gap-20px {
+  gap: 20px;
+}
+
 .f-gap-24px {
   gap: 24px;
 }
@@ -668,6 +668,10 @@ a.tt-underline:hover {
 .mb-72px {
   margin-bottom: 72px;
 }
+.mb-80px {
+  margin-bottom: 80px;
+}
+
 .mb-140px {
   margin-bottom: 140px;
 }
