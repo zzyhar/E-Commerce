@@ -426,6 +426,17 @@ line-height: 26px;
   line-height: 28px;
 }
 
+.title-20px{
+
+/* Title/20PX Regular */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+
+}
+
 .title-24px {
   /* Title/16PX Regular */
   font-family: "Poppins";

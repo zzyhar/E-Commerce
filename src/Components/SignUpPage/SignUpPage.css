@@ -11,10 +11,14 @@
     text-decoration: underline;
 }
 
-.login-image{
-    left: 135px;
+.login-image {
+    /* position: absolute; */
+    left : -135px;
+    top: 0; /* Adjust top position as needed */
+    width: 100%;
 }
 
-.class{
-    text-align: left;
+.right-side-singup{
+    padding-top: 124px;
+    padding-bottom: 133.5px;
 }
