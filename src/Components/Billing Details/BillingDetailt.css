@@ -1,3 +1,21 @@
 .check-out-input{ 
- height: 50px;   
+ height: 50px;
+ padding-left: 12px;   
+}
+
+.image-checkout{
+    width: 54px; 
+    height: 54px; 
+}
+
+.place-order-btn{
+    padding: 16px 48px;
+}
+
+.right-side-container{
+ width:527px   
+}
+
+.text-field{
+    padding-left: 8px;
 }

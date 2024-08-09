@@ -524,6 +524,10 @@ a.tt-underline:hover {
   align-self: flex-end;
 }
 
+.fx-w-w{
+  flex-wrap: wrap;
+}
+
 /**************/
 /*     Gaps   */
 /**************/
@@ -578,6 +582,10 @@ a.tt-underline:hover {
 .f-gap-84px {
   gap: 84px;
 }
+.f-gap-180px {
+  gap: 180px;
+}
+
 
 /**************/
 /*   Margins   */
@@ -624,6 +632,9 @@ a.tt-underline:hover {
   margin-top: 140px;
 }
 
+.mt-180px {
+  margin-top: 180px;
+}
 
 /* Margin bottom */
 .mb-2px {
@@ -700,6 +711,10 @@ a.tt-underline:hover {
 }
 .mr-32px {
   margin-right: 32px;
+}
+
+.mr-40px {
+  margin-right: 40px;
 }
 
 /* Margin left */

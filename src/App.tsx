@@ -7,8 +7,9 @@ import TopHeader from "./Components/TopHeader/TopHeader";
 // import ContactPage from "./Components/ContactPage/ContactPage";
 // import FLPаge from "./Components/FLPage/FLPage";
 // import WishList from "./Components/WishList/WishList";
-import CartSection from "./Components/Cart/CartSection";
-import BillingDetailt from "./Components/Billing Details/BillingDetails";
+// import CartSection from "./Components/Cart/CartSection";
+// import BillingDetailt from "./Components/Billing Details/BillingDetails";
+import ProfilePage from "./Components/ProfilePage/ProfilePage";
 const App: React.FC = () => {
   return (
     <Router>
@@ -20,7 +21,8 @@ const App: React.FC = () => {
       {/* <SignUpPage /> */}
       {/* <FLPаge /> */}
       {/* <CartSection /> */}
-      <BillingDetailt />
+      {/* <BillingDetailt /> */}
+      <ProfilePage />
     </Router>
   );
 };
