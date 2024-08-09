@@ -10,6 +10,7 @@ import TopHeader from "./Components/TopHeader/TopHeader";
 // import CartSection from "./Components/Cart/CartSection";
 // import BillingDetailt from "./Components/Billing Details/BillingDetails";
 import ProfilePage from "./Components/ProfilePage/ProfilePage";
+import ProductPage from "./Components/ProductPage/ProductPage";
 const App: React.FC = () => {
   return (
     <Router>
@@ -22,7 +23,8 @@ const App: React.FC = () => {
       {/* <FLPаge /> */}
       {/* <CartSection /> */}
       {/* <BillingDetailt /> */}
-      <ProfilePage />
+      {/* <ProfilePage /> */}
+      <ProductPage />
     </Router>
   );
 };

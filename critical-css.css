@@ -349,6 +349,38 @@ font-size: 16px;
 line-height: 26px;
 }
 
+.title-prod{ 
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+
+}
+
+
+
+.title-medium-14px{ 
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+}
+
+
+.heading-20px{
+/* Heading/20PX Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+/* identical to box height, or 100% */
+letter-spacing: 0.03em;
+
+}
 
 
 
@@ -823,6 +855,11 @@ a.tt-underline:hover {
 .col-trp {
   color: var(--theme-transparent);
 }
+
+.col-star{
+  color: #FFAD33;
+}
+
 /* ! Font colors hover */
 .col-hov-p:hover {
   color: var(--theme-color-primary);
@@ -962,6 +999,10 @@ a.tt-underline:hover {
 .br-1px {
   border: 1px;
   border-style: solid;
+}
+
+.br-none{
+  border: none;
 }
 
 .bor-col-p {
@@ -1248,6 +1289,9 @@ a.tt-underline:hover {
 
 .br-op-30{
   border: 1px solid rgb(0, 0, 0, .3);
+}
+.br-op-50{
+  border: 1px solid rgb(0, 0, 0, .5);
 }
 
 

@@ -1,12 +1,15 @@
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 import "./ProfilePage.css";
 import { Link } from "react-router-dom";
 
 const ProfilePage: React.FC = () => {
   return (
     <>
-      <div className="default-container">
+      <Header />
+      <div className="default-container mb-140px">
         {/* Path to page and userName */}
-        <div className="dsfx fx-ai-c fx-j-sb mt-80px mb-80px">
+        <div className="dsfx fx-j-sb mt-80px ">
           {/* Path */}
           <div className="dsfx f-gap-12px mb-80px">
             <Link
@@ -24,6 +27,7 @@ const ProfilePage: React.FC = () => {
             <span className="title-14px col-sec2">KOSMos3202</span>!
           </p>
         </div>
+        <div></div>
         <div className="dsfx fx-j-sb">
           {/* Left Side */}
           <div>
@@ -49,7 +53,7 @@ const ProfilePage: React.FC = () => {
             <p className="title-medium-16px col-tx2 mt-16px">My WishList</p>
           </div>
           {/* Rigth Side */}
-          <div>
+          <div className="profile-form-wrapper br-rad-4px">
             <h1 className="title-medium-20px col-sec2 mb-16px">
               Edit Your Profile
             </h1>
@@ -58,29 +62,33 @@ const ProfilePage: React.FC = () => {
                 <div className="half-from-container dsfx fx-d-c mr-40px">
                   <label className="title-16px col-tx2">First Name</label>
                   <input
-                    className="profile-input bg-col-s br-rad-4px"
+                    className="profile-input title-16px bg-col-s br-rad-4px"
+                    placeholder="Md"
                     type="text"
                   />
                 </div>
                 <div className="half-from-container dsfx fx-d-c">
                   <label className="title-16px col-tx2">Last Name</label>
                   <input
-                    className="profile-input bg-col-s br-rad-4px"
+                    className="profile-input title-16px bg-col-s br-rad-4px"
                     type="text"
+                    placeholder="Rimel"
                   />
                 </div>
                 <div className="half-from-container dsfx fx-d-c mr-40px">
                   <label className="title-16px col-tx2">Email</label>
                   <input
-                    className="profile-input bg-col-s br-rad-4px"
+                    className="profile-input title-16px bg-col-s br-rad-4px"
                     type="email"
+                    placeholder="rimel1111gmail.com"
                   />
                 </div>
                 <div className="half-from-container dsfx fx-d-c">
                   <label className="title-16px col-tx2">Address</label>
                   <input
-                    className="profile-input bg-col-s br-rad-4px"
+                    className="profile-input title-16px bg-col-s br-rad-4px"
                     type="text"
+                    placeholder="Kingstone, 5236, Canada"
                   />
                 </div>
               </div>
@@ -104,14 +112,19 @@ const ProfilePage: React.FC = () => {
                   placeholder="Confirm Password"
                 />
               </div>
-              <div className="dsfx fx-j-e">
-                <button>Cancel</button>
-                <button>Save Changes</button>
+              <div className="dsfx fx-j-e fx-j-c f-gap-32px mt-24px">
+                <button className="title-medium-16px bg-col-trp br-none col-tx2">
+                  Cancel
+                </button>
+                <button className="save-btn title-16px col-p bor-col-btn2  br-rad-4px bg-col-btn2 bg-hov-tx1 bor-col-hov-tx1 col-hov-p">
+                  Save Changes
+                </button>
               </div>
             </form>
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
