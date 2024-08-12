@@ -2,6 +2,7 @@ import "./WishList.css";
 import ProductPreview from "../ProductPreview/ProductPreview";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import React from "react";
 const WishList: React.FC = () => {
   return (
     <div>

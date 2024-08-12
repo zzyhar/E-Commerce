@@ -25,7 +25,10 @@ const Header: React.FC = () => (
         <Link className="nav-item title-16px col-tx2 tt-underline" to="/about">
           About
         </Link>
-        <Link className="nav-item title-16px col-tx2 tt-underline" to="/signup">
+        <Link
+          className="nav-item title-16px col-tx2 tt-underline"
+          to="/sign-up"
+        >
           Sign Up
         </Link>
       </nav>
@@ -44,7 +47,7 @@ const Header: React.FC = () => (
           />
         </div>
         <div className="dsfx f-gap-16px fx-ai-c">
-          <Link to="/favorites">
+          <Link to="/wish-list">
             <IconHandler
               className="svg-p1 svg-hov-btn2 cursor-pointer"
               path={heartIcon}

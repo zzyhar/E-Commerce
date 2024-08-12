@@ -1,5 +1,6 @@
+import React from "react";
 import "./Footer.css";
-import IconHandler from "../../shared/ui-components/icon-handler/IconHandler";
+import IconHandler from "../../shared/ui-components/icon-handler/IconHandler.tsx";
 import {
   linkedInIcon,
   facebookIcon,
@@ -9,7 +10,6 @@ import {
   sendIcon,
 } from "../../shared/ui-components/icon-handler/index.ts";
 import { Link } from "react-router-dom";
-
 /* 
     Add Links to Login, Account 
 */

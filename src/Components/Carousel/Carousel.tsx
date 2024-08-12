@@ -1,60 +1,45 @@
-import React, { useState } from "react";
-import { Slide } from "../../types"; // Importing the Slide type for type-checking the slides data
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import "./Carousel.css";
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-// Defining the props for the Carousel component
 interface CarouselProps {
-  data: {
-    slides: Slide[];
-  };
+  images: string[]; // Array of image paths
 }
 
-const Carousel: React.FC<CarouselProps> = ({ data }) => {
-  // State to keep track of the current slide index
-  const [slide, setSlide] = useState(0);
+const data: CarouselProps[] = [
+  { images: ["/assets/imgs/bike.jpg"] },
+  { images: ["/assets/imgs/Blender.jpeg"] },
+  { images: ["/assets/imgs/books.jpg"] },
+  { images: ["/assets/imgs/dashcam.webp"] },
+  { images: ["/assets/imgs/electric_guitar.jpg"] },
+  { images: ["/assets/imgs/fintess_tracker.jpeg"] },
+  { images: ["/assets/imgs/handbag.jpg"] },
+  { images: ["/assets/imgs/Iphones.jpeg"] },
+  { images: ["/assets/imgs/kithne_knives.webp"] },
+  { images: ["/assets/imgs/of.jpg"] },
+  { images: ["/assets/imgs/power_tools.jpg"] },
+  { images: ["/assets/imgs/TV.jpg"] },
+];
 
-  // Function to navigate to the next slide
-  const nextSlide = () => {
-    setSlide(slide === data.slides.length - 1 ? 0 : slide + 1);
-  };
-
-  // Function to navigate to the previous slide
-  const prevSlide = () => {
-    setSlide(slide === 0 ? data.slides.length - 1 : slide - 1);
-  };
-
+const Carousel: React.FC<CarouselProps> = () => {
   return (
-    <div className="carousel">
-      {/* Left arrow for navigating to the previous slide */}
-      <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
-      {/* Rendering each slide */}
-      {data.slides.map((item: Slide, idx: number) => (
-        <img
-          src={item.src}
-          alt={item.description}
-          key={idx}
-          className={slide === idx ? "slide" : "slide slide-hidden"}
-        />
-      ))}
-      {/* Right arrow for navigating to the next slide */}
-      <BsArrowRightCircleFill
-        onClick={nextSlide}
-        className="arrow arrow-right"
-      />
-      {/* Indicators for each slide */}
-      <span className="indicators">
-        {data.slides.map((_, idx: number) => (
-          <button
-            key={idx}
-            className={
-              slide === idx ? "indicator" : "indicator indicator-inactive"
-            }
-            onClick={() => setSlide(idx)}
-          ></button>
+    <>
+      <Swiper
+        pagination={true}
+        modules={[Pagination]}
+        className="carousel mt-40px"
+      >
+        {data.map((item) => (
+          <SwiperSlide key={item.images[0]}>
+            {" "}
+            {/* Add a unique key */}
+            <img src={item.images[0]} className="carousel" />{" "}
+            {/* Add alt text */}
+          </SwiperSlide>
         ))}
-      </span>
-    </div>
+      </Swiper>
+    </>
   );
 };
 

@@ -1,3 +1,4 @@
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
 import "swiper/css";
@@ -98,7 +99,6 @@ const AboutPage: React.FC = () => {
         </div>
 
         {/* 4 Perks Section */}
-        {/* 4 Perks Section */}
         <div className="mb-140px">
           <div className="dsfx f-gap-32px fx-ai-c fx-j-c">
             <div className="parent dsfx ab-perk fx-ai-c fx-d-c br-rad-4px br-op-30 bg-hov-sec2 col-hov-p bor-col-hov-sec2 svg-p svg-hov-btn">
@@ -149,8 +149,8 @@ const AboutPage: React.FC = () => {
                 <div className="perk-icon dsfx fx-ai-c fx-j-c bg-col-btn br-rad-cr сhild1">
                   <IconHandler
                     path={moneyBagIcon}
-                    iconSize="40x40"
-                    className=""
+                    iconSize="36x36"
+                    className="svg-tx"
                   />
                 </div>
               </div>

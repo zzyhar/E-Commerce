@@ -1,3 +1,4 @@
+import React from "react";
 import IconHandler from "../icon-handler/IconHandler";
 import { leftArrowIcon } from "../icon-handler/index";
 

@@ -1,42 +1,26 @@
 import "./OneProductBanner.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import Timer from "../../shared/ui-components/Timer/Timer";
 import ReverseCountDown from "../Countdown Timers/ReverseCountdown/ReverseCountdown";
+import React from "react";
 
 const OneProductBanner: React.FC = () => {
-  const [timerDays, setTimerDays] = useState<number>(0);
-  const [timerHours, setTimerHours] = useState<number>(0);
-  const [timerMinutes, setTimerMinutes] = useState<number>(0);
-  const [timerSeconds, setTimerSeconds] = useState<number>(0);
+  const [timerValues, setTimerValues] = useState<{
+    days: number;
+    hours: number;
+    minutes: number;
+    seconds: number;
+  }>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
-  useEffect(() => {
-    const startTimer = () => {
-      const countDownDate = new Date("August 30, 2024").getTime();
-
-      const interval = setInterval(() => {
-        const now = new Date().getTime();
-        const difference = countDownDate - now;
-
-        const days = Math.floor(difference / (24 * 3600 * 1000));
-        const hours = Math.floor(
-          (difference % (24 * 3600 * 1000)) / (3600 * 1000)
-        );
-        const minutes = Math.floor((difference % (3600 * 1000)) / (60 * 1000));
-        const seconds = Math.floor((difference % (60 * 1000)) / 1000);
-
-        if (difference < 0) {
-          clearInterval(interval);
-        } else {
-          setTimerDays(days);
-          setTimerHours(hours);
-          setTimerMinutes(minutes);
-          setTimerSeconds(seconds);
-        }
-      }, 1000);
-    };
-
-    startTimer();
-  }, []);
+  const handleTimerUpdate = (
+    days: number,
+    hours: number,
+    minutes: number,
+    seconds: number
+  ) => {
+    setTimerValues({ days, hours, minutes, seconds });
+  };
 
   // Utility function to format numbers with leading zero
   const formatNumber = (num: number): string => {
@@ -45,22 +29,19 @@ const OneProductBanner: React.FC = () => {
   return (
     <>
       <div className="default-container dsfx fx-d-r mb-72px p-relative">
-        <img
-          src="../../../public/assets/BannerOneProduct/Frame 600.png"
-          alt=""
-        />
-        <div className="p-absolute block-holder m-56px dsfx f-gap-56px">
+        <img src="/assets/BannerOneProduct/Frame 600.png" />
+        <div className="p-absolute block-holder m-56px f-gap-56px">
           <div className="dsfx fx-d-c f-gap-32px left-side">
-            <p className="categories title-semi-16px col-btn1">Categories</p>
-            <h1 className="one-title heading-semi-48px col-tx">
+            <p className="title-semi-16px col-btn1">Categories</p>
+            <h1 className="heading-semi-48px col-tx">
               Enhance Your Music Experience
             </h1>
-            <div className="one-timer">
+            <div>
               <ReverseCountDown
-                timerDays={formatNumber(timerDays)}
-                timerHours={formatNumber(timerHours)}
-                timerMinutes={formatNumber(timerMinutes)}
-                timerSeconds={formatNumber(timerSeconds)}
+                timerDays={formatNumber(timerValues.days)}
+                timerHours={formatNumber(timerValues.hours)}
+                timerMinutes={formatNumber(timerValues.minutes)}
+                timerSeconds={formatNumber(timerValues.seconds)}
               />
             </div>
             <Link
@@ -71,12 +52,10 @@ const OneProductBanner: React.FC = () => {
             </Link>
           </div>
           <div className="right-image-holder dsfx fx-ai-c">
-            <img
-              src="../../../public/assets/BannerOneProduct/speaker_big.png"
-              alt=""
-            />
+            <img src="/assets/BannerOneProduct/speaker_big.png" alt="" />
           </div>
         </div>
+        <Timer onTimerUpdate={handleTimerUpdate} />
       </div>
     </>
   );

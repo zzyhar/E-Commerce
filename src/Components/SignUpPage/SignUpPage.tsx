@@ -2,6 +2,7 @@ import "./SignUpPage.css";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import React from "react";
 
 const SignUpPage: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const SignUpPage: React.FC = () => {
       <div className="p-relative mt-60px">
         <img className="p-absolute" src="/assets/LoginPage/Login.png" alt="" />
       </div>
-      ц
+
       <div className="default-container dsfx fx-j-e">
         {/* form */}
 
