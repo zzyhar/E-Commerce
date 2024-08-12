@@ -1,3 +1,4 @@
+import React from "react";
 import "./ExploreSec.css";
 import Marker from "../Marker/Marker";
 // import IconHandler from "../../shared/ui-components/icon-handler/IconHandler";

@@ -14,6 +14,7 @@ import {
 import IconHandler from "../../shared/ui-components/icon-handler/IconHandler";
 import Marker from "../Marker/Marker";
 import FlashSaleProduct from "../FlashSale/FlashSaleProduct";
+import React from "react";
 
 const ProductPage: React.FC = () => {
   return (
@@ -136,7 +137,7 @@ const ProductPage: React.FC = () => {
                 </div>
                 <div>
                   <h2 className="title-16px col-tx2">Free Delivery</h2>
-                  <p className="undeline  title-prod col-tx2">
+                  <p className="underline  title-prod col-tx2">
                     Enter your postal code for Delivery Availability
                   </p>
                 </div>
@@ -152,7 +153,7 @@ const ProductPage: React.FC = () => {
                 </div>
                 <div>
                   <h2 className="title-16px col-tx2">Return Delivery</h2>
-                  <p className="undeline  title-prod col-tx2">
+                  <p className="underline title-prod col-tx2">
                     Free 30 Days Delivery Returns. Details
                   </p>
                 </div>

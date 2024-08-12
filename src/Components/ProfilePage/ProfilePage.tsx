@@ -1,3 +1,4 @@
+import React from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "./ProfilePage.css";
@@ -53,13 +54,13 @@ const ProfilePage: React.FC = () => {
             <p className="title-medium-16px col-tx2 mt-16px">My WishList</p>
           </div>
           {/* Rigth Side */}
-          <div className="profile-form-wrapper br-rad-4px">
+          <div className="profile-form-wrapper br-rad-4px box-shadow">
             <h1 className="title-medium-20px col-sec2 mb-16px">
               Edit Your Profile
             </h1>
             <form>
               <div className="dsfx fx-w-w">
-                <div className="half-from-container dsfx fx-d-c mr-40px">
+                <div className="half-from-container dsfx fx-d-c mr-40px mb-24px">
                   <label className="title-16px col-tx2">First Name</label>
                   <input
                     className="profile-input title-16px bg-col-s br-rad-4px"
@@ -116,7 +117,7 @@ const ProfilePage: React.FC = () => {
                 <button className="title-medium-16px bg-col-trp br-none col-tx2">
                   Cancel
                 </button>
-                <button className="save-btn title-16px col-p bor-col-btn2  br-rad-4px bg-col-btn2 bg-hov-tx1 bor-col-hov-tx1 col-hov-p">
+                <button className="p-16-48px title-16px col-p bor-col-btn2  br-rad-4px bg-col-btn2 bg-hov-tx1 bor-col-hov-tx1 col-hov-p">
                   Save Changes
                 </button>
               </div>

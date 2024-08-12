@@ -1,10 +1,6 @@
 .cal-icon{
     padding: 9px 10px 8px 10px;
 }
-
-
-
-
 .box-sizing{
     padding: 16px;
     width: calc((100% - 32px) / 3);
@@ -12,20 +8,14 @@
 
 .textarea{ 
     padding: 16px;
-    border: none;
     width: calc(100% - 32px);   
 }
 
-
-
-
 .right-side-input{
-    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
     padding: 40px 32px;
 }
 
 .left-side-input{
-    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
     padding: 40px 35px 51px;
     height: auto;
 }

@@ -5,12 +5,12 @@ import IconHandler from "../../shared/ui-components/icon-handler/IconHandler";
 import { mailIcon, phoneIcon } from "../../shared/ui-components/icon-handler";
 import ViewAllBtn from "../../shared/ui-components/ViewAllBtn/ViewAllBtn";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const ContactPage: React.FC = () => {
   return (
     <>
       <Header />
-
       <div className="default-container mt-80px mb-140px">
         {/* Path to page */}
         <div className="dsfx f-gap-12px mb-40px">
@@ -24,7 +24,7 @@ const ContactPage: React.FC = () => {
         </div>
         <div className="dsfx fx-d-r f-gap-32px ">
           {/* Left side */}
-          <div className="left-side-input dsfx fx-d-c f-gap-32px">
+          <div className="left-side-input dsfx fx-d-c f-gap-32px box-shadow">
             {/* Call Section */}
             <div>
               <div className="dsfx fx-ai-c mb-24px">
@@ -74,7 +74,7 @@ const ContactPage: React.FC = () => {
             </div>
           </div>
           {/* Right side */}
-          <div className="right-side-input">
+          <div className="right-side-input box-shadow">
             <form className="dsfx f-gap-32px fx-d-c ml-32px fx-ai-end">
               <div className="dsfx f-gap-16px">
                 <input
@@ -97,8 +97,8 @@ const ContactPage: React.FC = () => {
                 />
               </div>
               <textarea
-                className="textarea title-16px col-tx2 bg-col-s br-rad-4px"
-                rows="10"
+                className="textarea title-16px col-tx2 bg-col-s br-rad-4px br-none"
+                rows={10}
                 placeholder="Your Message"
               ></textarea>
               <ViewAllBtn to="" title="Send Message" />

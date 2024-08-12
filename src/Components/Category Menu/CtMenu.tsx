@@ -28,10 +28,10 @@ const CtMenu: React.FC = () => {
           >
             {item.title}
             <IconHandler
-              className=""
+              className="svg-btn"
               path={pointerIcon}
               iconSize="16x16"
-            ></IconHandler>
+            />
           </Link>
         ))}
       </div>

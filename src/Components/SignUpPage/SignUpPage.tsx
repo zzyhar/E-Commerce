@@ -47,7 +47,7 @@ const SignUpPage: React.FC = () => {
           </button>
           <div className="dsfx f-gap-16px fx-ai-c mt-32px">
             <p className="title-16px col-tx2 op-70">Already have account?</p>
-            <Link className="login title-16px col-tx2 op-70" to="/login">
+            <Link className="underline title-16px col-tx2 op-70" to="/login">
               Log In
             </Link>
           </div>

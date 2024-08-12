@@ -11,7 +11,7 @@ const WishList: React.FC = () => {
         {/* Top section with add to cart btn */}
         <div className="dsfx fx-j-sb mt-80px mb-60px">
           <p className="title-20px col-tx2">Wishlist(4)</p>
-          <button className="wish-list-btn title-16px col-tx2 br-1px br-rad-4px bg-col-trp bg-hov-sec2 col-hov-p">
+          <button className="p-16-48px title-16px col-tx2 br-1px br-rad-4px bg-col-trp bg-hov-sec2 col-hov-p">
             Move All to Cart
           </button>
         </div>
@@ -28,7 +28,7 @@ const WishList: React.FC = () => {
             <div className="marker br-rad-4px bg-col-sec2"></div>
             <div className="title-20px col-tx2">Just for You</div>
           </div>
-          <button className="wish-list-btn title-16px col-tx2 br-1px br-rad-4px bg-col-trp bg-hov-sec2 col-hov-p">
+          <button className="p-16-48px title-16px col-tx2 br-1px br-rad-4px bg-col-trp bg-hov-sec2 col-hov-p">
             See All
           </button>
         </div>

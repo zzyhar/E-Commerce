@@ -4,8 +4,6 @@ import React, { useState, useRef } from "react";
 
 import {
   cartIcon,
-  heartIcon,
-  eyeIcon,
   trashIcon,
 } from "../../shared/ui-components/icon-handler/index";
 import IconHandler from "../../shared/ui-components/icon-handler/IconHandler";

@@ -10,9 +10,6 @@ import {
   sendIcon,
 } from "../../shared/ui-components/icon-handler/index.ts";
 import { Link } from "react-router-dom";
-/* 
-    Add Links to Login, Account 
-*/
 
 const Footer: React.FC = () => {
   return (
@@ -83,7 +80,7 @@ const Footer: React.FC = () => {
             <div className="dsfx fx-d-c fx-ai-s fx-j-s">
               <h1 className="title-medium-20px col-tx">Download App</h1>
               <div className="dsfx fx-d-c fx-ai-s fx-j-c mt-24px">
-                <div className="reg-title title-12px col-tx mb-12px ">
+                <div className="op-70 title-12px col-tx mb-12px ">
                   Save $3 with App New User Only
                 </div>
                 <div className="mt-8 dsfx fx-d-r f-gap-12px">
@@ -106,7 +103,7 @@ const Footer: React.FC = () => {
                   />
                   <IconHandler
                     path={twitterIcon}
-                    iconSize="28x28"
+                    iconSize="24x24"
                     className="svg-p"
                   />
                   <IconHandler
@@ -123,13 +120,12 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="copyright dsfx fx-d-r f-gap-8px fx-j-c fx-ai-c">
+          <div className="op-40 dsfx fx-d-r f-gap-8px fx-j-c fx-ai-c">
             <IconHandler
               path={copyRightIcon}
               iconSize="20x20"
               className="svg-p"
             />
-            {/* !!!!!! */}
             <p className="title-16px col-p">
               Copyright Rimel 2024. All right reserved
             </p>

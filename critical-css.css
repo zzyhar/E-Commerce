@@ -135,7 +135,7 @@ input {
 a {
   text-decoration: none;
 }
-.undeline {
+.underline {
   text-decoration: underline;
 }
 
@@ -1315,3 +1315,6 @@ a.tt-underline:hover {
 }
 
 
+.box-shadow{
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+}

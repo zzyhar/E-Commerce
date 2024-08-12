@@ -166,7 +166,7 @@ const BillingDetails: React.FC = () => {
                 <label className="title-16px col-tx2">Cash on Delivery</label>
               </div>
             </form>
-            <button className="place-order-btn title-16px col-p bor-col-btn2  br-rad-4px bg-col-btn2 bg-hov-tx1 bor-col-hov-tx1 col-hov-p mt-32px">
+            <button className="p-16-48px title-16px col-p bor-col-btn2  br-rad-4px bg-col-btn2 bg-hov-tx1 bor-col-hov-tx1 col-hov-p mt-32px">
               Place Oreder
             </button>
           </div>

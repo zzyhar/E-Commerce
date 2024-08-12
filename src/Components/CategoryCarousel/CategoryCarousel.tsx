@@ -69,7 +69,7 @@ const data = [
   {
     icon: heatlthIcon,
     title: "Health & Beauty",
-    iconSize: "56x56",
+    iconSize: "60x60",
     className: "mb-16px mt-24px svg-btn",
   },
 ];
@@ -120,11 +120,11 @@ const CategoryCarousel: React.FC = () => {
             <RightArrow onClick={handleRightClick} />
           </div>
         </div>
-        <div className="dsfx fx-fx-j-sb f-gap-32px mb-60px">
+        <div className="dsfx fx-j-sb f-gap-32px mb-60px">
           {itemsToDisplay()}
         </div>
       </div>
-      <div className="line_spilitter"></div>
+      <div className="hor-div bg-col-tx1 op-40 mb-80px" />
     </div>
   );
 };

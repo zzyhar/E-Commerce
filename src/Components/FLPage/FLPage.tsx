@@ -1,8 +1,9 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "./FLPаge.css";
 import Header from "../Header/Header";
 
 import Footer from "../Footer/Footer";
-import { Link } from "react-router-dom";
 import ViewAllBtn from "../../shared/ui-components/ViewAllBtn/ViewAllBtn";
 
 const FLPаge: React.FC = () => {

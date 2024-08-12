@@ -35,11 +35,7 @@ const CartSection: React.FC = () => {
           {/* Cart Product Section */}
           <div className="product-wrapper dsfx fx-j-sb fx-ai-c">
             <div className="dsfx fx-ai-c f-gap-20px">
-              <img
-                className="img-preview"
-                src="../../../public/assets/imgs/bike.jpg"
-                alt=""
-              />
+              <img className="img-preview" src="/assets/imgs/bike.jpg" />
               <p className="title-16px col-tx2">Mountaine Bike</p>
             </div>
             <div className="dsfx fx-ai-c f-gap-24px">
@@ -47,8 +43,16 @@ const CartSection: React.FC = () => {
               <div className="quantity-selector dsfx br-1px br-rad-4px fx-ai-c">
                 <p className="mr-12px title-16px col-tx2 ">10</p>
                 <div>
-                  <IconHandler path={dropUp} iconSize="16x16" className="" />
-                  <IconHandler path={dropDown} iconSize="16x16" className="" />
+                  <IconHandler
+                    path={dropUp}
+                    iconSize="16x16"
+                    className="svg-btn"
+                  />
+                  <IconHandler
+                    path={dropDown}
+                    iconSize="16x16"
+                    className="svg-btn"
+                  />
                 </div>
               </div>
               <p className="title-16px col-tx2">$4000</p>
@@ -56,11 +60,7 @@ const CartSection: React.FC = () => {
           </div>
           <div className="product-wrapper dsfx fx-j-sb fx-ai-c">
             <div className="dsfx fx-ai-c f-gap-20px">
-              <img
-                className="img-preview"
-                src="../../../public/assets/imgs/bike.jpg"
-                alt=""
-              />
+              <img className="img-preview" src="/assets/imgs/bike.jpg" />
               <p className="title-16px col-tx2">Mountaine Bike</p>
             </div>
             <div className="dsfx fx-ai-c f-gap-24px">
@@ -68,8 +68,16 @@ const CartSection: React.FC = () => {
               <div className="quantity-selector dsfx br-1px br-rad-4px fx-ai-c">
                 <p className="mr-12px title-16px col-tx2 ">10</p>
                 <div>
-                  <IconHandler path={dropUp} iconSize="16x16" className="" />
-                  <IconHandler path={dropDown} iconSize="16x16" className="" />
+                  <IconHandler
+                    path={dropUp}
+                    iconSize="16x16"
+                    className="svg-btn"
+                  />
+                  <IconHandler
+                    path={dropDown}
+                    iconSize="16x16"
+                    className="svg-btn"
+                  />
                 </div>
               </div>
               <p className="title-16px col-tx2">$4000</p>
@@ -78,10 +86,10 @@ const CartSection: React.FC = () => {
         </div>
         {/* Buttons */}
         <div className="dsfx fx-j-sb mt-24px mb-80px">
-          <button className="cart-btn title-16px col-tx2 br-1px br-rad-4px bg-col-trp bg-hov-sec2 col-hov-p">
+          <button className="cart-btn p-16-48px title-16px col-tx2 br-1px br-rad-4px bg-col-trp bg-hov-sec2 col-hov-p">
             Move All to Cart
           </button>
-          <button className="cart-btn title-16px col-tx2 br-1px br-rad-4px bg-col-trp bg-hov-sec2 col-hov-p">
+          <button className="cart-btn p-16-48px title-16px col-tx2 br-1px br-rad-4px bg-col-trp bg-hov-sec2 col-hov-p">
             Update Cart
           </button>
         </div>
@@ -95,7 +103,7 @@ const CartSection: React.FC = () => {
               type="text"
             />
             {/* Apply coupon btn */}
-            <button className="cart-btn title-16px col-p bor-col-btn2  br-rad-4px bg-col-btn2 bg-hov-tx1 bor-col-hov-tx1 col-hov-p">
+            <button className="cart-btn p-16-48px title-16px col-p bor-col-btn2  br-rad-4px bg-col-btn2 bg-hov-tx1 bor-col-hov-tx1 col-hov-p">
               Apply Coupon
             </button>
           </div>
@@ -117,7 +125,7 @@ const CartSection: React.FC = () => {
               <p className="title-16px col-tx2">$8000</p>
             </div>
             <div className="dsfx fx-j-c">
-              <button className="cart-btn title-16px col-p bor-col-btn2  br-rad-4px bg-col-btn2 bg-hov-tx1 bor-col-hov-tx1 col-hov-p">
+              <button className="cart-btn p-16-48px title-16px col-p bor-col-btn2  br-rad-4px bg-col-btn2 bg-hov-tx1 bor-col-hov-tx1 col-hov-p">
                 Proceed to chekout
               </button>
             </div>

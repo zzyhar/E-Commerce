@@ -10,25 +10,19 @@ import {
 
 const Header: React.FC = () => (
   <>
-    <header className="default-container main-navbar dsfx mb-16px mt-40px fx-j-sb fx-ai-c">
-      <p className="logo heading-bold-24px col-tx2 ">Exclusive</p>
+    <header className="default-container dsfx mb-16px mt-40px fx-j-sb fx-ai-c">
+      <p className="heading-bold-24px col-tx2 ">Exclusive</p>
       <nav className="dsfx fx-d-r fx-ai-s f-gap-48px">
-        <Link className="nav-item title-16px col-tx2 tt-underline" to="/home">
+        <Link className="title-16px col-tx2 tt-underline" to="/home">
           Home
         </Link>
-        <Link
-          className="nav-item title-16px col-tx2 tt-underline"
-          to="/contact"
-        >
+        <Link className="title-16px col-tx2 tt-underline" to="/contact">
           Contact
         </Link>
-        <Link className="nav-item title-16px col-tx2 tt-underline" to="/about">
+        <Link className="title-16px col-tx2 tt-underline" to="/about">
           About
         </Link>
-        <Link
-          className="nav-item title-16px col-tx2 tt-underline"
-          to="/sign-up"
-        >
+        <Link className="title-16px col-tx2 tt-underline" to="/sign-up">
           Sign Up
         </Link>
       </nav>
@@ -38,7 +32,7 @@ const Header: React.FC = () => (
           <input
             type="text"
             placeholder="What are you looking for?"
-            className="search-input bg-col-s title-12px cursor-pointer"
+            className="bg-col-s title-12px cursor-pointer"
           />
           <IconHandler
             path={searchIcon}

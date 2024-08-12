@@ -13,7 +13,7 @@ const ViewAllBtn: React.FC<ViewAllBtnProps> = ({ to, title }) => {
       <div className="dsfx fx-j-c fx-ai-c">
         <Link
           to={to}
-          className="btn-best-section dsfx fx-ai-c fx-j-c br-rad-4px bg-col-btn2 col-tx bor-col-trp title-medium-16px bg-hov-btn-hov"
+          className="p-16-48px dsfx fx-ai-c fx-j-c br-rad-4px bg-col-btn2 col-tx bor-col-trp title-medium-16px bg-hov-btn-hov"
         >
           {title}
         </Link>

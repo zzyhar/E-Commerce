@@ -12,7 +12,7 @@ const Perks: React.FC = () => {
     <div className="default-container">
       <div className="dsfx f-gap-84px fx-ai-c fx-j-c mb-140px">
         <div className="dsfx fx-ai-c fx-d-c">
-          <div className="perk-icon-wrapper dsfx fx-ai-c bg-col-tx1 br-rad-cr mb-24px">
+          <div className="dsfx fx-ai-c bg-col-tx1 br-rad-cr mb-24px">
             <div className="perk-icon dsfx fx-ai-c fx-j-c bg-col-btn br-rad-cr">
               <IconHandler
                 path={deliveryIcon}
@@ -30,7 +30,7 @@ const Perks: React.FC = () => {
         </div>
 
         <div className="dsfx fx-ai-c fx-d-c">
-          <div className="perk-icon-wrapper dsfx fx-ai-c bg-col-tx1 br-rad-cr mb-24px">
+          <div className="dsfx fx-ai-c bg-col-tx1 br-rad-cr mb-24px">
             <div className="perk-icon dsfx fx-ai-c fx-j-c bg-col-btn br-rad-cr">
               <IconHandler
                 path={customerSupportIcon}
@@ -47,7 +47,7 @@ const Perks: React.FC = () => {
         </div>
 
         <div className="dsfx fx-ai-c fx-d-c">
-          <div className="perk-icon-wrapper dsfx fx-ai-c bg-col-tx1 br-rad-cr mb-24px">
+          <div className="dsfx fx-ai-c bg-col-tx1 br-rad-cr mb-24px">
             <div className="perk-icon dsfx fx-ai-c fx-j-c bg-col-btn br-rad-cr">
               <IconHandler
                 path={shieldIcon}

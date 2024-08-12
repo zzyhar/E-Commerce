@@ -1,3 +1,4 @@
+import React from "react";
 import Marker from "../Marker/Marker";
 import "./Banner.css";
 
@@ -18,7 +19,7 @@ const Banner: React.FC = () => {
               <p className="title-14px col-tx">
                 Black and White version of the PS5 coming out on sale.
               </p>
-              <p className="title-medium-16px undeline col-tx col-hov-btn-bl cursor-pointer  col-hov-btn-bl cursor-pointer">
+              <p className="title-medium-16px underline col-tx col-hov-btn-bl cursor-pointer  col-hov-btn-bl cursor-pointer">
                 Shop Now
               </p>
             </div>
@@ -39,7 +40,7 @@ const Banner: React.FC = () => {
               <p className="title-14px col-tx">
                 Featured woman collections that give you another vibe.
               </p>
-              <p className="title-medium-16px undeline col-tx col-hov-btn-bl cursor-pointer ">
+              <p className="title-medium-16px underline col-tx col-hov-btn-bl cursor-pointer ">
                 Shop Now
               </p>
             </div>
@@ -54,7 +55,7 @@ const Banner: React.FC = () => {
               <div className="dsfx fx-d-c f-gap-16px wm-ruler">
                 <h1 className="heading-semi-24px col-tx ">Speakers</h1>
                 <p className="title-14px col-tx">Amazon wireless speakers</p>
-                <p className="title-medium-16px undeline col-tx col-hov-btn-bl cursor-pointer">
+                <p className="title-medium-16px underline col-tx col-hov-btn-bl cursor-pointer">
                   Shop Now
                 </p>
               </div>
@@ -67,7 +68,7 @@ const Banner: React.FC = () => {
                 <div className="dsfx fx-d-c f-gap-16px wm-ruler">
                   <h1 className="heading-semi-24px col-tx">Perfume</h1>
                   <p className="title-14px col-tx">GUCCI INTENSE OUD EDP</p>
-                  <p className="title-medium-16px undeline col-tx col-hov-btn-bl cursor-pointerundeline col-tx">
+                  <p className="title-medium-16px underline col-tx col-hov-btn-bl cursor-pointerundeline col-tx">
                     Shop Now
                   </p>
                 </div>
