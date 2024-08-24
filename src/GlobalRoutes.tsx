@@ -13,7 +13,7 @@ import ProductPage from "./Components/ProductPage/ProductPage";
 
 const GlobalRoutes: React.FC = () => (
   <Routes>
-    <Route path="/home" element={<HomePage />} />
+    <Route path="" element={<HomePage />} />
     <Route path="/about" element={<AboutPage />} />
     <Route path="/contact" element={<ContactPage />} />
     <Route path="/sign-up" element={<SignUpPage />} />
