@@ -20,18 +20,6 @@ import { VOCategories } from "../../shared/models/categories.model";
 //     console.error("Error:", error);
 //   });
 
-import {
-  suiteIcon,
-  dressIcon,
-  homeIcon,
-  medicineIcon,
-  ballIcon,
-  toyIcon,
-  groceriesIcon,
-  heatlthIcon,
-  electronicsIcon,
-} from "../../shared/ui-components/icon-handler/index";
-
 const CategoryCarousel: React.FC = () => {
   const [categories, setCategories] = useState<VOCategories[]>([]);
 
@@ -74,17 +62,17 @@ const CategoryCarousel: React.FC = () => {
       items.push(...categories.slice(0, 6 - remainingItems));
     }
 
-    return categories.map((category, index) => (
+    return items.map((item, index) => (
       <div
         key={index}
         className="category-item dsfx fx-j-c fx-d-c fx-ai-c br-1px  br-rad-4px bor-col-tx2 bg-hov-sec2 svg-hov-p col-hov-p"
       >
         <IconHandler
-          path={category.icon}
+          path={item.icon}
           iconSize={"56x56"}
           className="mb-16px mt-24px svg-btn"
         />
-        <p className="title-16px ">{category.name}</p>
+        <p className="title-16px ">{item.name}</p>
       </div>
     ));
   };

@@ -1,32 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./CtMenu.css";
 import IconHandler from "../../shared/ui-components/icon-handler/IconHandler";
 import { pointerIcon } from "../../shared/ui-components/icon-handler/index";
+import { VOCategories } from "../../shared/models/categories.model";
 
 const CtMenu: React.FC = () => {
-  const tsArray = [
-    { title: "Men's Fashion", link: "/mens-fashion" },
-    { title: "Women's Fashion", link: "/womens-fashion" },
-    { title: "Electronics", link: "/electronics" },
-    { title: "Home & Lifestyle", link: "/home-lifestyle" },
-    { title: "Medicine", link: "/medicine" },
-    { title: "Sports & Outdoors", link: "/sports-outdoors" },
-    { title: "Baby's & Toys", link: "/babies-toys" },
-    { title: "Groceries & Pets", link: "/groceries-pets" },
-    { title: "Health & Beauty", link: "/health-beauty" },
-  ];
+  const [categories, setCategories] = useState<VOCategories[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/api/cms/get-categories", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ group_key: "product_cat" }),
+        });
+
+        const data = await response.json();
+        setCategories(data);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
       <div className="menu dsfx fx-d-c f-gap-16px mt-40px">
-        {tsArray.map((item, index) => (
+        {categories.map((item, index) => (
           <Link
             key={index}
-            className="dsfx fx-j-sb fx-ai-c title-16px col-tx2 svg-trp svg-hov-btn2 cursor-pointer"
-            to={item.link}
+            className="dsfx fx-j-sb fx-ai-c title-16px col-tx2 svg-trp svg-hov-btn2 cursor-pointer menu-option"
+            to={item.key}
           >
-            {item.title}
+            {item.name}
             <IconHandler
               className="svg-btn"
               path={pointerIcon}

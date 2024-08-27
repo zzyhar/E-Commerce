@@ -7,6 +7,7 @@ export class VOCategories {
   description: string = "";
   key: string = "";
   value: string = "";
+  icon: string;
   order: number | null;
 
   createdAt?: Date;
