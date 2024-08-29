@@ -775,6 +775,11 @@ a.tt-underline:hover {
   margin-left: 32px;
 }
 
+.p-4-12px{
+  padding: 4px 12px;
+}
+
+
 /* ! Padding */
 .p-2px {
   padding: 2px;
@@ -1317,4 +1322,8 @@ a.tt-underline:hover {
 
 .box-shadow{
   box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+}
+
+.line-through{ 
+  text-decoration: line-through;
 }

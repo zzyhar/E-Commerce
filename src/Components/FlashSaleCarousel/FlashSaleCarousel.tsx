@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Timer from "../../shared/ui-components/Timer/Timer";
 import "./FlashSaleCarousel.css";
 import Marker from "../Marker/Marker";
@@ -10,8 +10,28 @@ import {
   leftArrowIcon,
   rightArrowIcon,
 } from "../../shared/ui-components/icon-handler/index";
+import { VOProducts } from "../../shared/models/product.model";
 
 const FlashSaleCarousel: React.FC = () => {
+  const [products, setProducts] = useState<VOProducts[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/api/products/get-products", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ tags: ["best-selling"] }),
+        });
+        const data = await response.json();
+        setProducts(data.products);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    };
+    fetchData();
+  }, []);
+
   const [timerValues, setTimerValues] = useState<{
     days: number;
     hours: number;
@@ -65,10 +85,9 @@ const FlashSaleCarousel: React.FC = () => {
       </div>
 
       <div className="dsfx f-gap-32px fx-j-c">
-        <FlashSaleProduct />
-        <FlashSaleProduct />
-        <FlashSaleProduct />
-        <FlashSaleProduct />
+        {products.map((product, index) => (
+          <FlashSaleProduct key={index} product={product} page="" />
+        ))}
       </div>
       <div className="dsfx fx-j-c fx-ai-c mt-60px mb-60px">
         <ViewAllBtn to="/sale-products" title="View All Products" />
